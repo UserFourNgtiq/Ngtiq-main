@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400&family=Poppins:wght@300;400;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+#jumbo{
+    background: url(image/banner.jpg);
+    background-size: cover;
+    /* margin-top: 120px; */
+    height: 450px;
+}
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 90%;
+  }
+  
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  
+  #bg-color{
+    background-color: rgb(221, 228, 231);
+  }
+  .hr-devide {
+    width: 100%;
+    display: inline-block;
+    clear: both;
+}
+#jumboss{
+  background: url(image/background.jpg);
+  height: 300px;
+  background-size: cover;
+}
+.navTab-style {
+  border-bottom: black 2px solid;
+  background-color: #fcfcfc;
+  position: sticky;
+  top: 100px;
+  width: 100% !important;
+  z-index: 1000;
+  height: 350px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+/* inner content of nav tab */
+.nav-link-head-style {
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+
+.nav-link-style {
+  text-decoration: none;
+  margin-bottom: 5px;
+  font-weight: 600;
+  color: #46474a;
+}

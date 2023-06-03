@@ -1,0 +1,1332 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1st Page</title>
+    <!-- b4.6 cdn -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <!-- mystyle -->
+    <link rel="stylesheet" href="style.css">
+
+    <link href="assets/css/boxicon.min.css" rel="stylesheet">
+
+ 
+
+    
+</head>
+<body>
+    
+<!-- Header -->
+<nav id="main_nav" class="navbar sticky-top navbar-expand-lg navbar-light bg-white shadow">
+    <div class="container-fluid d-flex justify-content-between align-items-center">
+
+        <a class="navbar-brand h1" href="index.html">
+            <div class="logo">
+                <img class="logo"
+                    src="./assets/ngtiq logo 2/ngt-iq-high-resolution-logo-color-on-transparent-background.png" width="120">
+            </div>
+
+        </a>
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbar-toggler-success" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="align-self-center collapse navbar-collapse flex-fill  d-lg-flex justify-content-lg-between"
+            id="navbar-toggler-success">
+            <div class="flex-fill mx-xl-5 mb-2">
+                <ul class="nav navbar-nav d-flex justify-content-between mx-xl-5 text-center text-dark">
+                    <li class="nav-item">
+                        <a class="nav-link btn-outline-primary rounded-pill px-3" href="index.html">Home</a>
+                        <!-- <div class="dropdown-content">
+                            <a href="#">Link 1</a>
+                            <a href="#">Link 2</a>
+                            <a href="#">Link 3</a>
+                        </div> -->
+                    </li>
+
+                    <!-- <li class="nav-item">
+                    <div class="dropdown">
+                        <button class="dropbtn">Dropdown</button>
+                        <div class="dropdown-content">
+                          <a href="#">Link 1</a>
+                          <a href="#">Link 2</a>
+                          <a href="#">Link 3</a>
+                        </div>
+                      </div>
+                    </li> -->
+
+
+                    <li class="nav-item">
+                        <a class="nav-link btn-outline-primary rounded-pill px-3" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn-outline-primary rounded-pill px-3" onclick="techNav()">Technology</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn-outline-primary rounded-pill px-3" onclick="appNav()">Apps &
+                            Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn-outline-primary rounded-pill px-3" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn-outline-primary rounded-pill px-3" href="staff.html">Staff
+                            Augmentation</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="navbar align-self-center d-flex">
+                <a class="nav-link" href="#"><i class='bx bx-bell bx-sm bx-tada-hover text-primary'></i></a>
+                <a class="nav-link" href="#"><i class='bx bx-cog bx-sm text-primary'></i></a>
+                <a class="nav-link" href="#"><i class='bx bx-user-circle bx-sm text-primary'></i></a>
+            </div>
+        </div>
+    </div>
+</nav>
+<!-- onclick nav-links under nav-tab  -->
+<!-- technology tabs -->
+<div class="container-fluid navbar-nav-scroll navTab-style" id="techTab" style="display: none !important;">
+    <div class="row">
+        <div class="col-lg-3 col-md-6 col-sm-12 p-5">
+            <h4 class="nav-link-head-style text-primary">Benchmarking & Strategy</h4>
+            <a class="nav-link-style d-block" href="accelarators.html">Accelerators</a>
+            <a class="nav-link-style d-block" href="competitive-analytics.html">Competitive Benchmarking</a>
+            <a class="nav-link-style d-block" href="enterprise-data-strategy.html">Enterprise Data Strategy</a>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12 p-5">
+            <h4 class="nav-link-head-style text-primary">Technology Implementation</h4>
+            <a class="nav-link-style d-block" href="ai-ml.html">AI, ML</a>
+            <a class="nav-link-style d-block" href="analytics-cloud-aws.html">Analytics on Cloud Ecosystem-AWS</a>
+            <a class="nav-link-style d-block" href="analytics-cloud-azure.html">Analytics on Cloud
+                Ecosystem-Azure</a>
+            <a class="nav-link-style d-block" href="bi-intelligence.html">BI Reporting & Dashboards</a>
+            <a class="nav-link-style d-block" href="big-data-ana-consult.html">Big Data Analytics</a>
+            <a class="nav-link-style d-block" href="data-lakes-cloud.html">Data Lakes on Cloud</a>
+            <a class="nav-link-style d-block" href="bi-intelli-migration-serv.html">BI Migration Services</a>
+            <a class="nav-link-style d-block" href="data-manage-ana-serv.html">Data Management Services / DW</a>
+            <a class="nav-link-style d-block" href="data-mesh-serv.html">Data Mesh Services</a>
+            <a class="nav-link-style d-block" href="data-migration-to-cloud.html">Data Migration to Cloud</a>
+            <a class="nav-link-style d-block" href="ETL-Migration.html">ETL Migration with AWS Glue</a>
+            <a class="nav-link-style d-block" href="master-data-management.html">Master Data Management</a>
+            <a class="nav-link-style d-block" href="prescriptive.html">Predictive & Prescriptive Analytics</a>
+
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12 p-5">
+            <h4 class="nav-link-head-style text-primary">Managed Services</h4>
+            <a class="nav-link-style d-block" href="Data Monetization.html">Data Monetization</a>
+            <a class="nav-link-style d-block" href="Data Governance.html">Data Governance</a>
+            <a class="nav-link-style d-block" href="data-as-a-service.html">Data-as-a-Service</a>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12 p-5">
+            <h4 class="nav-link-head-style text-primary">Platform Services</h4>
+            <a class="nav-link-style d-block" href="platform-services-informatica.html">Informatica</a>
+            <a class="nav-link-style d-block" href="platform-services-looker.html">Looker</a>
+            <a class="nav-link-style d-block" href="platform-services-powerBI.html">Power BI</a>
+            <a class="nav-link-style d-block" href="platform-services-snowflake.html">Snowflake</a>
+            <a class="nav-link-style d-block" href="platform-services-talend.html">Talend</a>
+            <a class="nav-link-style d-block" href="platform-services-tableau.html">Tableau</a>
+            <a class="nav-link-style d-block" href="platform-services-qlik.html">Qlik</a>
+        </div>
+    </div>
+</div>
+<!-- script for navtab -->
+<script>
+    function techNav() {
+        var x = document.getElementById("techTab");
+        if (x.style.display === "none") {
+            x.style.display = "block";
+        } else {
+            x.style.display = "none";
+        }
+    }</script>
+<!-- technology tab end -->
+<!-- apps & services tab -->
+<div class="container-fluid navbar-nav-scroll navTab-style" id="appserviceTab" style="display: none !important;">
+    <div class="row">
+        <div class="col-lg-3 col-md-6 col-sm-12 p-5">
+            <h4 class="nav-link-head-style text-primary">Benchmarking & Strategy</h4>
+            <a class="nav-link-style d-block" href="#">Application Benchmarking</a>
+            <a class="nav-link-style d-block" href="#">Application Modernization Roadmap</a>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12 p-5">
+            <h4 class="nav-link-head-style text-primary">Technology Services</h4>
+            <a class="nav-link-style d-block" href="experience.html">Experience Design</a>
+            <a class="nav-link-style d-block" href="mobile-application.html">Mobile Application Development</a>
+            <a class="nav-link-style d-block" href="aws-application-modern.html">AWS Application Modernization</a>
+            <a class="nav-link-style d-block" href="applicationModernization.html">Application Modernization</a>
+            <a class="nav-link-style d-block" href="customApplicationDevelopment.html">Custom Application
+                Development</a>
+            <a class="nav-link-style d-block" href="enterprisePortals.html">Enterprise Portals, Content and
+                Collaboration</a>
+            <a class="nav-link-style d-block" href="salesforceDevelopment.html">Salesforce Development Services</a>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12 p-5">
+            <h4 class="nav-link-head-style text-primary">Managed Services</h4>
+            <a class="nav-link-style d-block" href="RPA service.html">Automation / RPA</a>
+            <a class="nav-link-style d-block" href="Cloud-&-Migration.html">Cloud Migration</a>
+            <a class="nav-link-style d-block" href="QualityEngineeringTesting.html">Quality Engineering</a>
+            <a class="nav-link-style d-block" href="TransformativeApplicationManagement.html">Transformative
+                Application Management (TAM)</a>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12 p-5">
+            <h4 class="nav-link-head-style text-primary">Platform Services</h4>
+            <a class="nav-link-style d-block" href="A&E-PS-automationAnywhere.html">Automation Anywhere</a>
+            <a class="nav-link-style d-block" href="A&E-PS-drupal.html">Drupal</a>
+            <a class="nav-link-style d-block" href="A&E-PS-microsoft.html">Microsoft</a>
+            <a class="nav-link-style d-block" href="A&E-PS-Salesforce.html">Salesforce</a>
+            <a class="nav-link-style d-block" href="A&E-PS-Sharepoint.html">Microsoft Sharepoint</a>
+            <a class="nav-link-style d-block" href="A&E-PS-UIPath.html">UiPath</a>
+
+        </div>
+    </div>
+</div>
+<!-- script for navtab -->
+<script>
+    function appNav() {
+        var x = document.getElementById("appserviceTab");
+        if (x.style.display === "none") {
+            x.style.display = "block";
+        } else {
+            x.style.display = "none";
+        }
+    }</script>
+<!-- apps & services tab end -->
+<!-- Close Header & nav -->
+
+
+
+<div class="container-fluid bg-img">
+
+    <div class="row text-white">
+        <div class="col-lg-6 col-sm-12">
+            <h6 style="margin-left: 100px; padding-top: 50px;">HOME / DIGITAL APPS
+
+
+                <img src="image foldewr/download.png " style="padding-bottom: 3px;" height="17px" width="15px"> /
+                ROBOTIC PROCESS AUTOMATION (RP...
+                <img src="image foldewr/download.png" style="padding-bottom: 3px;" height="17px" width="15px">
+
+            </h6>
+
+            <br>
+
+            <h1 style="margin-left: 100px ;">
+
+                Robotic Process Automation (RPA) Services
+            </h1>
+            <br>
+
+
+            <h5 style="margin-left: 100px;">
+                Automate your business processes to increase performance and productivity.
+            </h5>
+
+            <br>
+            <br>
+
+            <!-- start -->
+            <button type="button" class="btn btn-danger" style="margin-left: 100px;" data-toggle="modal"
+                data-target="#exampleModal" data-whatever="@getbootstrap">Let's Talk</button>
+
+
+            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Call us Today</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+
+                        <div class="modal-body">
+                            <form>
+
+                                <div class="form-group">
+
+                                    <input type="text" class="form-control" id="recipient-name" placeholder="Name">
+                                </div>
+                                <div class="form-group">
+
+                                    <input type="text" class="form-control" id="recipient-name" placeholder="Email">
+                                </div>
+                                <div class="form-group">
+
+                                    <input type="text" class="form-control" id="recipient-name"
+                                        placeholder="company name">
+                                </div>
+
+                            </form>
+                        </div>
+                        <p style="color: black; margin-left: 15px;">By submitting your information, you agree to our
+                            revised <a href="https://www.trianz.com/privacy-statement">Privacy Statement.</a></p>
+
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Let's Talk</button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- modal end -->
+        </div>
+        <div class="col-lg-6 col-sm-12 text-white">
+
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img class="d-block " src="image foldewr/Forbes-and-ISG_23_10.png" alt="First slide"
+                            style="margin-top: 55px; margin-left: 77px;" height="270px" width="500px">
+                        <br>
+
+                        <h5 style="margin-left: 80px;">Recognized for best-in-class 'Market Chellenger' In the</h5>
+                        <h5 style="text-align: center;"> Digital Transformation
+                            Space by ISG </h5>
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block " src="image foldewr/ISG-Digital_18-201005_23.png" alt="Second slide"
+                            style="margin-top: 55px; margin-left: 77px;" height="270px" width="500px">
+                        <br>
+                        <h5 style="margin-left: 80px;">Recognized for best-in-class Advisory Excellence and </h5>
+                        <h5 style="text-align: center;">Strong Digital
+                            Capabilities</h5>
+                    </div>
+
+                </div>
+                <br>
+                <br>
+                <br>
+
+
+
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+            <div>
+            </div>
+        </div>
+    </div>
+
+</div>
+<div>
+</div>
+
+<br>
+<br>
+
+<div class="container-fluid">
+
+    <div class="row ">
+        <div class="col-7">
+
+            <h3 style="margin-left: 110px;">
+                Performance and Productivity Enhancements Enabled by RPA
+            </h3>
+
+
+            <hr class="new5">
+            <p style="
+              font-size: 16px;
+              line-height: 1.6;
+              margin-left: 110px;">
+
+
+                Robotic Process Automation (RPA) has revolutionized the way organizations handle repetitive,
+                rule-based digital tasks. Those who are adopting RPA have not only saved time, effort, and
+                operational costs, but are also achieving greater process efficiency.
+            </p>
+
+
+            <p style="
+                font-size: 16px;
+                line-height: 1.6;
+                margin-left: 110px;
+                
+                
+            ">
+                The advantages of extended, creative problem-solving capabilities and the delivery of superior
+                business results have ushered in a new era of what we call RPA “digital champions.” Champions use
+                RPA to generate rich process data that drives meaningful insights, improve speed and system
+                security, and experience better throughput volume.
+            </p>
+
+        </div>
+
+
+        <div class="col-5">
+            <img alt="" class="img-responsive" src="image foldewr/Performance-and-Productivity-Enhancements.jpg "
+                height="350px" width="350px" style="margin-left: 110px;">
+
+        </div>
+    </div>
+</div>
+
+<hr class="new1">
+
+<div class="container-fluid">
+
+    <div class="row ">
+        <div class="col-6">
+            <p style="text-align: center; font-size: 20px;">Utilization of Digitalization Techniques</p>
+
+            <img src="image foldewr/RPA-graph.png" height="450px" width="500px" style="margin-left: 100px;">
+            <p style="text-align: center; font-size: 13px;">
+             2023
+            </p>
+        </div>
+
+
+
+        <div class="col-6">
+            <h3 style="margin-top: 40px; margin-right: 40px ; 
+                    font-size: 24px;
+                    font-weight: 500;
+                    line-height: 1.5;
+                    font-family: inherit;
+                    color: inherit;
+                ">
+                We Own One of the World’s Largest Databases on Digital Transformation
+            </h3>
+
+            <hr class="new5" style="margin-left: 1px;">
+
+            <p>
+                NGTIQ has invested in creating Trasers, one of the world’s largest databases
+                <br>
+                on digital transformations with data from over 5,000 companies spanning <br>
+
+                20 industries. We understand the state of RPA adoption and the best
+                <br>
+                practices followed by the most successful companies in the world.
+            </p>
+
+            <p>
+                Advanced technologies deliver the last mile of digitalization. Digital
+                <br>champions lead
+                <br> in RPA compared to all industries, disrupting value propositions, delivering
+                <br>
+                better experiences, and tracking usage in real time.
+            </p>
+
+
+        </div>
+    </div>
+    
+
+
+</div>
+</div>
+<br>
+
+
+<div class="container-fluid bg-light">
+
+    <div class="row ">
+        <div class="col-8">
+
+            <img src="image foldewr/left-quote.webp" alt="" height="30px" width="30px" style="margin-left: 100px;">
+            <br>
+            <br>
+
+
+            <p style="
+        font-size: 20px;
+        line-height: 1.8;
+        margin-left: 110px;
+    ">
+                When a company applies AI-aided automation to their workflows, the service desk becomes a sort of triage
+                center. Meaning, Robotic Process Automation (RPA) can take over prioritizing, categorizing, and
+                resolving requests, allowing employees to fulfill their own requests without disruption to underlying
+                systems.
+            </p>
+
+            <img src="image foldewr/right-quote.webp" alt="" height="30px" width="30px" style="margin-left:750px;">
+        </div>
+
+        <div class="col-4">
+
+            <div class="card" style="width: 14rem;">
+                <img src="image foldewr/download (2).jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Colonel Sanders</h5>
+                    <p class="card-text"></p>
+                    <a href="https://en.wikipedia.org/wiki/Colonel_Sanders" class="btn btn-primary">Read more</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<br>
+<br>
+
+
+
+<h3 style="margin-left: 80px;">
+    RPA Services for Better Business Operations
+
+</h3>
+
+<hr class="new5 " style="margin-left: 80px;">
+
+<p style="margin-left: 80px;">
+    We have the expertise, partnerships, and vision to help your company adopt AI-driven RPA to accelerate business
+    processes and improve operational efficiencies
+    <br>in the business stack.
+
+    At NGTIQ, <br>
+    <br>
+
+    we partner with leading solution providers like <a
+        href="https://www.trianz.com/partnerships/digital-apps/automation-anywhere-partner"
+        style="color: orangered;">Blue Prism, Automation Anywhere, and UiPath</a> to provide a full spectrum of RPA
+    services to our clients, thus
+    <br>
+    streamlining the adoption of your intelligent automation solution. Jointly, we extend differentiated offerings to
+    drive success and growth
+    <br>
+    <br>
+
+    for our clients by helping them focus on business-critical activities.
+
+    With a strong command of advanced machine learning and semantic processing technologies,
+    <br>
+    we can help you adapt RPA solutions across a range of business needs and facets, including:
+</p>
+
+<br>
+<br>
+
+
+<div class="container-fluid">
+
+    <div class="row ">
+        <div class="col-6">
+
+            <div class="card float-left bg-light" style="margin-left: 65px;">
+                <div class="row ">
+
+                    <div class="col-sm-7">
+                        <div class="card-block">
+                            <!--           <h4 class="card-title">Small card</h4> -->
+                            <strong>
+                                <p style="margin-left: 15px;">
+                                    Process Assessment</p>
+                            </strong>
+                            <p style="margin-left: 15px;">We will identify candidate processes to better serve your
+                                automation needs and expectations.</p>
+
+                        </div>
+                    </div>
+
+                    <div class="col-sm-5">
+                        <img class="d-block w-100" src="image foldewr/rsp-tech-transfer-process-1.png" alt=""
+                            style="margin-top: 45 px;">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-6">
+
+            <div class="card float-left bg-light">
+                <div class="row ">
+
+                    <div class="col-sm-7">
+                        <div class="card-block">
+                            <!--           <h4 class="card-title">Small card</h4> -->
+                            <strong>
+                                <p style="margin-left: 15px;">Technology Assessment and Recommendations</p>
+                            </strong>
+                            <p style="margin-left: 15px;">We review current platforms and suggest upgrades or
+                                replacements to support your.</p>
+
+                        </div>
+                    </div>
+
+                    <div class="col-sm-5">
+                        <img class="d-block w-100" src="image foldewr/rsp-tech-transfer-process-1.png" alt="">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+
+        <div class="container-fluid" style="margin-top: 20px;">
+
+            <div class="row ">
+                <div class="col-6">
+
+                    <div class="card float-left bg-light" style="margin-left: 65px;">
+                        <div class="row ">
+
+                            <div class="col-sm-7">
+                                <div class="card-block">
+                                    <!--           <h4 class="card-title">Small card</h4> -->
+                                    <strong>
+                                        <p style="margin-left: 15px;">
+                                            Implementation and Deployment</p>
+                                    </strong>
+                                    <p style="margin-left: 15px;">We help you build the technology stack and train your
+                                        staff so that you achieve the. </p>
+
+                                </div>
+                            </div>
+
+                            <div class="col-sm-5">
+                                <img class="d-block w-100" src="image foldewr/rsp-tech-transfer-process-1.png" alt=""
+                                    style="margin-top: 45 px;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6">
+
+                    <div class="card float-left bg-light">
+                        <div class="row ">
+
+                            <div class="col-sm-7">
+                                <div class="card-block">
+                                    <!--           <h4 class="card-title">Small card</h4> -->
+                                    <strong>
+                                        <p style="margin-left: 15px;">Ongoing Support</p>
+                                    </strong>
+                                    <p style="margin-left: 15px;">We will be with you long after adoption to keep your
+                                        RPA solution running smoothly .</p>
+
+                                </div>
+                            </div>
+
+                            <div class="col-sm-5">
+                                <img class="d-block w-100" src="image foldewr/rsp-tech-transfer-process-1.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <br>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+<p style="font-size: large; margin-left: 600px; margin-top: 20px;"> RPA Services Model</p>
+
+
+<img alt="An RPA services model defining the operational steps to achieve automation success."
+    class="img-responsive myInfoImg " src="image foldewr/RPA-Services (1).png" style="margin-top: 20px;">
+
+
+
+<h3 style="margin-left: 110px;">Our RPA Solutions</h3>
+
+
+<hr class="new5">
+
+<p style="margin-left: 110px;">
+    As we help to drive automation into your business processes, we also increase visibility into complex production
+    environments. Data generated from RPA <br>can help you to see pain points and opportunities that
+    can drive efficiency <br>
+
+    <br>
+    far beyond the top line numbers that come with <a
+        href="https://www.trianz.com/insights/what-is-intelligent-automation " style="color: orangered;">intelligent
+        automation.</a> Data generated from RPA-driven processes may also be used as inputs into advanced <br>
+    <br>
+
+    analytics that drive operational efficiencies even higher.
+
+    Through custom analytics work built from best-in-class automation platforms,<br>
+
+    we can offer you a deep, real-time perspective into your business operations.
+
+    We cover every phase of RPA consultation and service, including:
+</p>
+
+
+<div class="container">
+    <div class="col-md-12 col-sm-12 col-xs-12 client-stats-block data-stats blue-border-box row-eq-height">
+        <div class="col-md-2 col-sm-2 col-xs-12 client-stats row-eq-text"><img alt="Use Case and Process Identification"
+                class="img-responsive center-block" src="image foldewr/Automation-pipeline.webp">
+        </div>
+
+        <div class="col-md-10 col-sm-10 col-xs-12 client-stats-txt">
+            <h4>Use Case and Process Identification</h4>
+            <p>Develop a complete roadmap and pipeline for your RPA implementation with fully actionable recommendations
+                and step-by-step guidance.</p>
+        </div>
+    </div>
+
+</div>
+
+<div class="container">
+    <div class="col-md-12 col-sm-12 col-xs-12 client-stats-block data-stats blue-border-box row-eq-height">
+        <div class="col-md-2 col-sm-2 col-xs-12 client-stats row-eq-text"><img alt="Use Case and Process Identification"
+                class="img-responsive center-block" src="image foldewr/Automation-pipeline.webp">
+        </div>
+
+        <div class="col-md-10 col-sm-10 col-xs-12 client-stats-txt">
+            <h4>Use Case and Process Identification</h4>
+            <p>Develop a complete roadmap and pipeline for your RPA implementation with fully actionable recommendations
+                and step-by-step guidance.</p>
+        </div>
+    </div>
+
+</div>
+
+<div class="container">
+    <div class="col-md-12 col-sm-12 col-xs-12 client-stats-block data-stats blue-border-box row-eq-height">
+        <div class="col-md-2 col-sm-2 col-xs-12 client-stats row-eq-text"><img alt="Use Case and Process Identification"
+                class="img-responsive center-block" src="image foldewr\Use-case-and-process-identification.webp">
+        </div>
+
+        <div class="col-md-10 col-sm-10 col-xs-12 client-stats-txt">
+            <h4>Use Case and Process Identification</h4>
+            <p>Develop a complete roadmap and pipeline for your RPA implementation with fully actionable recommendations
+                and step-by-step guidance.</p>
+        </div>
+    </div>
+
+</div>
+
+<div class="container">
+    <div class="col-md-12 col-sm-12 col-xs-12 client-stats-block data-stats blue-border-box row-eq-height">
+        <div class="col-md-2 col-sm-2 col-xs-12 client-stats row-eq-text"><img alt="Use Case and Process Identification"
+                class="img-responsive center-block" src="image foldewr/Full-scale-deployment.webp">
+        </div>
+
+        <div class="col-md-10 col-sm-10 col-xs-12 client-stats-txt">
+            <h4>Use Case and Process Identification</h4>
+            <p>Develop a complete roadmap and pipeline for your RPA implementation with fully actionable recommendations
+                and step-by-step guidance.</p>
+        </div>
+    </div>
+
+</div>
+
+
+
+<div class="container">
+
+    <h3 style="margin-left: 1px; margin-bottom: 8px;">
+        RPA Services to Deliver Next Gen Business Processes
+    </h3>
+
+    <hr class="new5" style="margin-left: 1px;">
+
+    <p style="margin-left: 1px;">Apart from combining artificial intelligence and machine learning capabilities to
+        handle high-volume, repeatable tasks, RPA can also offer:</p>
+
+</div>
+
+<div class="container ">
+    <div class="col-md-12 col-sm-12 col-xs-12 client-stats-block data-stats blue-border-box row-eq-height">
+        <div class="col-md-2 col-sm-2 col-xs-12 client-stats row-eq-text "><img
+                alt="Use Case and Process Identification" class="img-responsive center-block"
+                src="image foldewr/Automation-pipeline.webp">
+        </div>
+
+        <div class="col-md-10 col-sm-10 col-xs-12 client-stats-txt">
+            <h4 style="color: skyblue
+        ;">INCREASED PRODUCTIVITY</h4>
+            <p>RPA will help you to realize tactical productivity enhancements by eradicating tedious, redundant tasks
+                by using software robots that are intelligently managed by advanced architectural platforms. RPA will
+                also enable your organization to securely automate any variety of processes at scale in a feature-rich
+                automation development environment.</p>
+        </div>
+    </div>
+
+</div>
+
+<div class="container">
+    <div class="col-md-12 col-sm-12 col-xs-12 client-stats-block data-stats blue-border-box row-eq-height">
+        <div class="col-md-2 col-sm-2 col-xs-12 client-stats row-eq-text"><img alt="Use Case and Process Identification"
+                class="img-responsive center-block" src="image foldewr/Real-time-Analytics.webp">
+        </div>
+
+        <div class="col-md-10 col-sm-10 col-xs-12 client-stats-txt">
+            <h4 style="color: skyblue
+        ;">
+                ENHANCED ROI</h4>
+            <p>Data generated from RPA will helps you see pain points and opportunities that can drive efficiency. This
+                will provide a high level of customization to enterprise-wide operational requirement.</p>
+        </div>
+    </div>
+
+</div>
+
+<div class="container">
+    <div class="col-md-12 col-sm-12 col-xs-12 client-stats-block data-stats blue-border-box row-eq-height">
+        <div class="col-md-2 col-sm-2 col-xs-12 client-stats row-eq-text"><img alt="Use Case and Process Identification"
+                class="img-responsive center-block" src="image foldewr/Enhanced-ROI.webp">
+        </div>
+
+        <div class="col-md-10 col-sm-10 col-xs-12 client-stats-txt">
+            <h4 style="color: skyblue
+    ;">
+                REAL-TIME ANALYTICS</h4>
+            <p>RPA can provide end-to-end view of the health of your business services through custom analytics work
+                built on top of best-in-class automation platforms. This will help you get a deep perspective into how
+                your business is operating in real-time.</p>
+        </div>
+    </div>
+
+</div>
+
+<br>
+
+<div class="container" style="margin-top: 200px
+;">
+
+    <h3 style="margin-left: 1px;">Are You Ready to Automate Your Business Processes?</h3>
+
+
+    <hr class="new5" style="margin-left: 1px;">
+
+    <p style="margin-left: 1px;">
+        As we help to drive automation into your business processes, we also increase visibility into complex production
+        environments. Data generated from RPA <br>can help you to see pain points and opportunities that
+        can drive efficiency <br>
+
+        <br>
+        far beyond the top line numbers that come with <a
+            href="https://www.trianz.com/insights/what-is-intelligent-automation " style="color: orangered;">intelligent
+            automation.</a> Data generated from RPA-driven processes may also be used as inputs into advanced <br>
+        <br>
+
+        analytics that drive operational efficiencies even higher.
+
+        Through custom analytics work built from best-in-class automation platforms,<br>
+
+        we can offer you a deep, real-time perspective into your business operations.
+
+        We cover every phase of RPA consultation and service, including:
+    </p>
+
+</div>
+<!--  -->
+<div class="container">
+    <div class="jumbotron text-white" id="jumbo">
+        <h3> Experience the NGTIQ Difference</h3>
+        <br>
+
+        <p class="lead">NGTIQ enables digital transformations through effective strategies and excellence in execution.
+            Collaborating with business and technology leaders, we help formulate and execute operational strategies to
+            achieve intended business outcomes by bringing the best of consulting, technology experiences, and execution
+            models.</p>
+        <hr class="my-4">
+        <p>Powered by knowledge, research, and perspectives, we enable clients to transform their business ecosystems
+            and achieve superior performance by leveraging infrastructure, cloud, analytics, digital and security
+            paradigms. Reach out to get in touch or learn more.</p>
+
+    </div>
+</div>
+<!--  -->
+
+<!-- carosal -->
+
+<section class="pt-5 pb-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-6">
+                <h3 class="mb-3">INSIGHTS </h3>
+            </div>
+            <div class="col-6 text-right">
+                <a class="btn btn-primary mb-3 mr-1" href="#carouselExampleIndicators2" role="button" data-slide="prev">
+                    <i class="fa fa-arrow-left"></i>
+                </a>
+                <a class="btn btn-primary mb-3 " href="#carouselExampleIndicators2" role="button" data-slide="next">
+                    <i class="fa fa-arrow-right"></i>
+                </a>
+            </div>
+            <div class="col-12">
+                <div id="carouselExampleIndicators2" class="carousel slide" data-ride="carousel">
+
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="row">
+
+                                <div class="col-md-4 mb-3">
+                                    <div class="card">
+                                        <img class="img-fluid" alt="100%x280"
+                                            src="image foldewr/The-Importance-of-IT-Operations-Management-FINAL-Thumbnail.webp">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Special title treatment</h4>
+                                            <p class="card-text">With supporting text below as a natural lead-in to
+                                                additional content.</p>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="col-md-4 mb-3">
+                                    <div class="card">
+                                        <img class="img-fluid" alt="100%x280"
+                                            src="image foldewr/How-Managers-Can-Use-Thumbnail.webp">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Special title treatment</h4>
+                                            <p class="card-text">With supporting text below as a natural lead-in to
+                                                additional content.</p>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 mb-3">
+                                    <div class="card">
+                                        <img class="img-fluid" alt="100%x280"
+                                            src="image foldewr/Digital-Trends-Manufacturing-Thumbnail.webp">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Special title treatment</h4>
+                                            <p class="card-text">With supporting text below as a natural lead-in to
+                                                additional content.</p>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row">
+
+                                <div class="col-md-4 mb-3">
+                                    <div class="card">
+                                        <img class="img-fluid" alt="100%x280"
+                                            src="image foldewr/Best-Practices-with-AWS-Thumbnail_0.jpg">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Special title treatment</h4>
+                                            <p class="card-text">With supporting text below as a natural lead-in to
+                                                additional content.</p>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="col-md-4 mb-3">
+                                    <div class="card">
+                                        <img class="img-fluid" alt="100%x280"
+                                            src="image foldewr/Legal-Services-Thumbnail.webp">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Special title treatment</h4>
+                                            <p class="card-text">With supporting text below as a natural lead-in to
+                                                additional content.</p>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 mb-3">
+                                    <div class="card">
+                                        <img class="img-fluid" alt="100%x280"
+                                            src="https://images.unsplash.com/photo-1506197603052-3cc9c3a201bd?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=0754ab085804ae8a3b562548e6b4aa2e">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Special title treatment</h4>
+                                            <p class="card-text">With supporting text below as a natural lead-in to
+                                                additional content.</p>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row">
+
+                                <div class="col-md-4 mb-3">
+                                    <div class="card">
+                                        <img class="img-fluid" alt="100%x280"
+                                            src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=ee8417f0ea2a50d53a12665820b54e23">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Special title treatment</h4>
+                                            <p class="card-text">With supporting text below as a natural lead-in to
+                                                additional content.</p>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="col-md-4 mb-3">
+                                    <div class="card">
+                                        <img class="img-fluid" alt="100%x280"
+                                            src="https://images.unsplash.com/photo-1532777946373-b6783242f211?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=8ac55cf3a68785643998730839663129">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Special title treatment</h4>
+                                            <p class="card-text">With supporting text below as a natural lead-in to
+                                                additional content.</p>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+</section>
+<!-- carosal end -->
+
+
+<!-- client we serve carousel -->
+<div class="container-fluid mx-0 my-1">
+    <div class="logos">
+        <div class="logos-slide">
+            <img src="assets/img/user-one/data-manage-ana-serv/carousel-logo/5.png">
+            <img src="assets/img/user-one/data-manage-ana-serv/carousel-logo/chubb.png">
+            <img src="assets/img/user-one/data-manage-ana-serv/carousel-logo/Comcast_0.png">
+            <img src="assets/img/user-one/data-manage-ana-serv/carousel-logo/discounttire.png">
+            <img src="assets/img/user-one/data-manage-ana-serv/carousel-logo/Facebook-Logo-wine.png">
+            <img src="assets/img/user-one/data-manage-ana-serv/carousel-logo/FICO.png">
+            <img src="assets/img/user-one/data-manage-ana-serv/carousel-logo/Johnson-&-Johnson--Logos.png">
+            <img src="assets/img/user-one/data-manage-ana-serv/carousel-logo/Lyft_logo-1.png">
+            <img src="assets/img/user-one/data-manage-ana-serv/carousel-logo/mastercard.webp">
+            <img src="assets/img/user-one/data-manage-ana-serv/carousel-logo/Meryl-Lynch.png">
+            <img src="assets/img/user-one/data-manage-ana-serv/carousel-logo/Prologis.png">
+            <img src="assets/img/user-one/data-manage-ana-serv/carousel-logo/signode.webp">
+        </div>
+    </div>
+</div>
+<script>
+    var copy = document.querySelector(".logos-slide").cloneNode(true);
+    document.querySelector(".logos").appendChild(copy);
+</script>
+<!-- client we serve carousel end -->
+
+<!-- Get in touch start -->
+<div class="container-fluid" style="margin-left: -10px;">
+    <div class="col-md-12 col-sm-12 col-xs-12 get-in-touch-block newdesign_homegettouch">
+        <div class="container" style="margin-left: 30px;">
+            <div>
+                <div class="col-md-12 col-sm-12 col-xs-12 nopad d-flex">
+                    <div class="col-md-4 col-sm-4 col-xs-12 nopad re-get-bg">
+                        <div>
+                            <div id="block-betahomegetintouchtitle">
+                                <div>
+                                    <div class="col-md-12 col-sm-12 col-xs-12 title-block">
+                                        <h4>Get in Touch</h4>
+                                        <h2>Let us help you<br>transform and grow</h2>
+                                        <div class="hr-devide">
+                                            <hr>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div id="block-betahomesocialmedia">
+                                <div>
+                                    <div class="col-md-12 col-sm-12 col-xs-12 social-links nopad">
+                                        <h4>Follow us on social media</h4>
+                                        <ul class="list-unstyled">
+                                            <li><a href="https://www.linkedin.com/company/trianz" target="_blank"
+                                                    rel="nofollow"><img alt="linkedin" class="img-responsive"
+                                                        height="30px" src="/User-five/NGTIQ/icons/linkedin.webp"
+                                                        width="30px"></a>
+                                            </li>
+                                            <li><a href="https://twitter.com/trianz" target="_blank"
+                                                    rel="nofollow"><img alt="twitter" class="img-responsive"
+                                                        height="30px" src="/User-five/NGTIQ/icons/twitter.webp"
+                                                        width="30px"></a></li>
+                                            <li><a href="https://www.facebook.com/Trianz" target="_blank"
+                                                    rel="nofollow"><img alt="facebook" class="img-responsive"
+                                                        height="30px" src="/User-five/NGTIQ/icons/facebook.webp"
+                                                        width="30px"></a></li>
+                                            <li><a href="https://www.youtube.com/user/TrianzInc" target="_blank"
+                                                    rel="nofollow"><img alt="youtube" class="img-responsive"
+                                                        height="30px" src="/User-five/NGTIQ/icons/youtube.webp"
+                                                        width="30px"></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-8 col-sm-8 col-xs-12 get-in-touch-form ">
+                        <div class="col-md-12 col-sm-12 col-xs-12">
+                            <div>
+                                <div id="block-webform">
+                                    <div id="webform_submission_home_beta_get_in_touch_node_1761_form-ajax">
+                                        <form class="webform-submission-home- form-row"
+                                            data-drupal-selector="webform-submission-home-beta-get-in-touch-node-1761-form"
+                                            action="/analytics/analytics-accelerators" method="post"
+                                            id="webform-submission-home-beta-get-in-touch-node-1761-form"
+                                            accept-charset="UTF-8">
+                                            <div
+                                                class="col-md-6 js-form-item form-item js-form-type-textfield form-item-full-name js-form-item-full-name form-no-label">
+                                                <label for="edit-full-name--4"
+                                                    class="visually-hidden js-form-required form-required">Name</label>
+                                                <input class="form-control form-text required"
+                                                    data-drupal-selector="edit-full-name" type="text"
+                                                    id="edit-full-name--4" name="full_name" value="" size="60"
+                                                    maxlength="255" placeholder="Enter Your Name"
+                                                    required="required" aria-required="true">
+                                            </div>
+                                            <div
+                                                class="col-md-6 js-form-item form-item js-form-type-email form-item-email js-form-item-email form-no-label">
+                                                <label for="edit-email--4"
+                                                    class="visually-hidden js-form-required form-required">Business
+                                                    Email</label>
+                                                <input class="form-control form-email required"
+                                                    data-drupal-selector="edit-email"
+                                                    pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,63}$"
+                                                    type="email" id="edit-email--4" name="email" value="" size="60"
+                                                    maxlength="254" placeholder="Enter Email Address"
+                                                    required="required" aria-required="true">
+                                            </div>
+                                            <div
+                                                class="col-md-12 js-form-item form-item js-form-type-textfield form-item-company js-form-item-company form-no-label">
+                                                <label for="edit-company--4"
+                                                    class="visually-hidden js-form-required form-required">Company</label>
+                                                <input class="form-control form-text required"
+                                                    data-drupal-selector="edit-company" type="text"
+                                                    id="edit-company--4" name="company" value="" size="60"
+                                                    maxlength="255" placeholder="Enter Company Name"
+                                                    required="required" aria-required="true">
+                                            </div>
+                                            <div
+                                                class="col-md-12 js-form-item form-item js-form-type-textarea form-item-comments js-form-item-comments form-no-label">
+                                                <label for="edit-comments--3"
+                                                    class="visually-hidden js-form-required form-required">Message
+                                                    for Us</label>
+                                                <div>
+                                                    <textarea class="form-control form-textarea required"
+                                                        data-drupal-selector="edit-comments"
+                                                        aria-describedby="edit-comments--3--description"
+                                                        id="edit-comments--3" name="comments" rows="5" cols="60"
+                                                        placeholder="Message for Us" required="required"
+                                                        aria-required="true"></textarea>
+                                                </div>
+                                                <div id="edit-comments--3--description" class="description">
+                                                    <p class="requestCont_service">By submitting your information,
+                                                        you agree to our revised &nbsp;<a href="/privacy-statement"
+                                                            target="_blank">Privacy Statement</a>.</p>
+                                                </div>
+                                            </div>
+                                            <input data-drupal-selector="edit-hidden-value" type="hidden"
+                                                name="hidden_value"
+                                                value="https://www.trianz.com/analytics/analytics-accelerators">
+                                            <input data-drupal-selector="edit-ip" type="hidden" name="ip"
+                                                value="106.201.45.244">
+                                            <div data-drupal-selector="edit-actions"
+                                                class="form-actions webform-actions js-form-wrapper form-wrapper"
+                                                id="edit-actions--7">
+                                                <input
+                                                    class="webform-button--submit btn btn-primary button button--primary js-form-submit form-submit"
+                                                    data-drupal-selector="edit-actions-submit-4"
+                                                    data-disable-refocus="true" type="submit"
+                                                    id="edit-actions-submit--4" name="op" value="Let's Talk">
+                                            </div>
+                                            <input
+                                                data-drupal-selector="form-wduy023hdm1ebawf7p-htse-j-qrxb3o-frsugnyi9i"
+                                                type="hidden" name="form_build_id"
+                                                value="form-WDuy023hDm1EBAwf7p_Htse-j_Qrxb3o_FrsUGnyI9I"><input
+                                                data-drupal-selector="edit-webform-submission-home-beta-get-in-touch-node-1761-form"
+                                                type="hidden" name="form_id"
+                                                value="webform_submission_home_beta_get_in_touch_node_1761_form">
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- get in touch end -->
+
+ 
+
+
+<!-- Start Footer -->
+<footer class="bg-secondary pt-4" id="footer_top">
+    <div class="container-fluid">
+        <div class="row py-4">
+
+            <div class="col-lg-3 col-12 align-left">
+                <a class="navbar-brand" href="index.html">
+                    <i class='bx bx-buildings bx-sm text-light'></i>
+                    <span class="text-light h5">NGTIQ</span> <span class="text-light h5 semi-bold-600"></span>
+                </a>
+                <p class="text-light my-lg-4 my-2">
+                    Elictric office, Jaykrishna Bazar Rd, opposite Kolkata, Tarkeshwar, West Bengal 712410.
+                </p>
+                <ul class="list-inline footer-icons light-300">
+                    <li class="list-inline-item m-0">
+                        <a class="text-light" target="_blank" href="http://facebook.com/">
+                            <i class='bx bxl-facebook-square bx-md'></i>
+                        </a>
+                    </li>
+                    <li class="list-inline-item m-0">
+                        <a class="text-light" target="_blank" href="https://www.linkedin.com/">
+                            <i class='bx bxl-linkedin-square bx-md'></i>
+                        </a>
+                    </li>
+                    <li class="list-inline-item m-0">
+                        <a class="text-light" target="_blank" href="https://www.whatsapp.com/">
+                            <i class='bx bxl-whatsapp-square bx-md'></i>
+                        </a>
+                    </li>
+                    <li class="list-inline-item m-0">
+                        <a class="text-light" target="_blank" href="https://www.flickr.com/">
+                            <i class='bx bxl-flickr-square bx-md'></i>
+                        </a>
+                    </li>
+                    <li class="list-inline-item m-0">
+                        <a class="text-light" target="_blank" href="https://www.medium.com/">
+                            <i class='bx bxl-medium-square bx-md'></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="col-lg-3 col-md-4 my-sm-0 mt-4">
+                <h3 class="h4 pb-lg-3 text-light light-300">Our Company</h2>
+                    <ul class="list-unstyled text-light light-300">
+                        <li class="pb-2">
+                            <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a
+                                class="text-decoration-none text-light" href="index.html">Home</a>
+                        </li>
+                        <li class="pb-2">
+                            <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a
+                                class="text-decoration-none text-light py-1" href="about.html">About Us</a>
+                        </li>
+                        <li class="pb-2">
+                            <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a
+                                class="text-decoration-none text-light py-1" href="work.html">Work</a>
+                        </li>
+                        <li class="pb-2">
+                            <i class='bx-fw bx bxs-chevron-right bx-xs'></i></i><a
+                                class="text-decoration-none text-light py-1" href="pricing.html">Price</a>
+                        </li>
+                        <li class="pb-2">
+                            <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a
+                                class="text-decoration-none text-light py-1" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+            </div>
+
+            <div class="col-lg-3 col-md-4 my-sm-0 mt-4">
+                <h2 class="h4 pb-lg-3 text-light light-300">Our Works</h2>
+                <ul class="list-unstyled text-light light-300">
+                    <li class="pb-2">
+                        <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a
+                            class="text-decoration-none text-light py-1" href="#">Branding</a>
+                    </li>
+                    <li class="pb-2">
+                        <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a
+                            class="text-decoration-none text-light py-1" href="#">Business</a>
+                    </li>
+                    <li class="pb-2">
+                        <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a
+                            class="text-decoration-none text-light py-1" href="#">Marketing</a>
+                    </li>
+                    <li class="pb-2">
+                        <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a
+                            class="text-decoration-none text-light py-1" href="#">Social Media</a>
+                    </li>
+                    <li class="pb-2">
+                        <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a
+                            class="text-decoration-none text-light py-1" href="#">Digital Solution</a>
+                    </li>
+                    <li class="pb-2">
+                        <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a
+                            class="text-decoration-none text-light py-1" href="#">Graphic</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="col-lg-3 col-md-4 my-sm-0 mt-4">
+                <h2 class="h4 pb-lg-3 text-light light-300">For Client</h2>
+                <ul class="list-unstyled text-light light-300">
+                    <li class="pb-2">
+                        <i class='bx-fw bx bx-phone bx-xs'></i><a class="text-decoration-none text-light py-1"
+                            href="tel:010-020-0340">+91-8929946339</a>
+                    </li>
+                    <li class="pb-2">
+                        <i class='bx-fw bx bx-mail-send bx-xs'></i><a class="text-decoration-none text-light py-1"
+                            href="mailto:info@ngtiq.com">info@ngtiq.com</a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="w-100  py-3" style="background-color: #4232C2;">
+        <div class="container" style="margin-top: -35px;">
+            <div class="row pt-2">
+                <div class="col-lg-6 col-sm-12">
+                    <p class="text-lg-start text-center text-light light-300">
+                        © Copyright 2021 NGTIQ Company. All Rights Reserved.
+                    </p>
+                </div>
+                <div class="col-lg-6 col-sm-12">
+                    <p class="text-lg-end text-center text-light light-300">
+                        Designed by <a rel="sponsored" class="text-decoration-none text-light"
+                            href="https://ngtiq.com/" target="_blank"><strong>NGTIQ</strong></a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</footer>
+<!-- End Footer -->
+
+
+
+
+<!-- b4.6 cdn for js -->
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
+    integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
+    crossorigin="anonymous"></script>
+
+
+
+
+</body> 
+
+
+
+
+</html>

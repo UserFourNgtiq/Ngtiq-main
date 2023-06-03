@@ -1,0 +1,165 @@
+*{
+    box-sizing: border-box;
+    font-family: poppins,helvetica,arial,sans-serif;
+}
+/**********navbar ***********/
+.navTab-style {
+    border-bottom: var(--bs-NGTIQ) 1px solid;
+    background-color: #fcfcfc;
+    position: sticky;
+    top: 100px;
+    width: 100% !important;
+    z-index: 1000;
+    height: 350px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+.nav-link {
+    color: black !important;
+}
+.nav-link:hover {
+    color: white !important;
+}
+
+/* inner content of nav tab */
+.nav-link-head-style {
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+.nav-link-style {
+    text-decoration: none;
+    margin-bottom: 5px;
+    font-weight: 600;
+    color: #46474a;
+}
+
+
+
+
+
+
+
+
+
+
+/*********header banner*********/
+.container{
+    position: relative;
+}
+.breadcrumb{
+    background: none;
+}
+.page-header .breadcrumb {
+    background: transparent;
+    font-size: 20px;
+}
+.tHeader{
+    color: white;
+}
+#myCarousel{
+    position: absolute;
+   margin-top: 0px;
+   
+     
+}
+/*********paragraph all*********/
+.Para{
+    margin-left: 120px;
+   
+         
+    font-size: 18px;
+    line-height: 1.6;
+}
+/*****paraContainer******/
+.paraContainer{
+    margin-top: 20px;
+  
+}
+/********Mobile Apps para start**********/
+.boxPara{
+    margin-top: 50px;
+}
+
+.visualized-box {
+    
+   margin-left: 120px !important;
+   margin-right: 60px !important;
+}
+
+ .visualized-box .visualized-image {
+   
+    padding: 60px 20px;
+}
+/************ <!-- our service start -->***************/
+.ourService{
+    background-color:#f2faff;
+    padding-top: 50px;
+    max-width: 100% !important;
+  
+}
+.serviceHead{
+    color: #29497b;
+    margin-bottom: 50PX !important;
+    margin-left: 80px;
+  
+
+
+}
+.serviceContent{
+  
+    background-color: white !important;
+  padding-top: 20px !important;
+  padding-bottom: 20px !important;
+  margin-left: 30px !important;
+  margin-right: 20px !important;
+  transition: 1s;
+    
+}
+.serviceContent:hover{
+    cursor: pointer;
+  
+   
+  
+    animation: myAnimate 0.2s ease-in forwards;
+}
+@keyframes myAnimate {
+    from {
+        transform: translateY(0px);
+        box-shadow: 0px;
+    }
+    to {
+        transform: translateY(3px);
+        box-shadow: 0 2px 3px 2px;
+    }
+}
+
+.margin_top{
+    margin-left: 50px;
+    margin-top: 30px;
+}
+.h-fluid{
+    height: 700px !important;
+}
+@media(max-width:770px) {
+    .h-fluid{
+        height: max-content;
+    }
+    
+}
+@media(max-width:570px) {
+    .h-fluid{
+        height: max-content;
+    }
+    
+}
+/*****************footBanner****************/
+
+.footBanner{
+    margin-top: 30px;
+}
+.paraf{
+    font-size: 18px;
+    line-height: 1.6;
+    padding: 20px;
+}
