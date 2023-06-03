@@ -1,0 +1,252 @@
+/* header css */
+.page-header {
+    background-image: url(../userThreeImages/hd-banner.jpg);
+    background-size: cover;
+    max-width: 100%;
+}
+
+.page-header .breadcrumb {
+    background: transparent;
+    font-size: 20px;
+}
+
+.page-header .breadcrumb a {
+    text-decoration: none;
+}
+
+.page-header h1 {
+    font-weight: 600;
+    word-spacing: 5px;
+    margin-bottom: 30px;
+}
+
+.page-header p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.page-header .left-col {
+    padding: 100px 100px 0px 100px;
+}
+
+.page-header .right-col {
+    padding: 50px 100px 0px 100px;
+    text-align: center;
+}
+
+.header-carou {
+    height: 130px;
+    background-color: white;
+    border-bottom: 1px solid #4232c2;
+}
+
+.page-header .right-col .carousel-item img {
+    max-width: 100%;
+}
+
+.img-crop {
+    height: 250px !important;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* content 1 css */
+.content-page h2,
+h4 {
+    font-weight: 400;
+    margin: 20px 0px;
+    color: #4232c2;
+}
+
+.content-page p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin: 0 0 20px;
+}
+
+.content-page hr {
+    border-top: 2px solid #4232c2;
+    opacity: 1;
+    width: 70px;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.content-page .preventinImg {
+    text-align: center;
+}
+
+.content-page .preventinImg img {
+    width: 100%;
+    margin-top: 60px;
+}
+
+.contentONEpage {
+    background-color: #f2faff;
+    padding-left: 107px;
+    padding-right: 107px;
+    border-top: 1px solid #91c4e461;
+    border-bottom: 1px solid #91c4e461;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin: 0 0 20px;
+}
+
+.content-page .securityBox {
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+    ;
+}
+
+.content-page .securityImg img {
+    padding: 20px 0px;
+}
+
+.content-page .experienceBox {
+    display: inline-block;
+    padding: 20px;
+    color: #fff;
+    background-position: center;
+    background-size: cover;
+}
+
+.content-page .experienceText {
+    color: white;
+    padding: 40px;
+}
+
+.commitment-carou {
+    height: 200px;
+    /* 510px */
+    background-image: url(../client-bg.jpg);
+    background-size: cover;
+    margin: 20px 0px;
+}
+
+
+
+
+/* GET IN TOUCH CSS START */
+.get-in-touch-block {
+    background: #f9f9f9;
+    padding: 5% 0;
+}
+
+.newdesign_homegettouch {
+    color: #000;
+}
+
+.re-get-bg {
+    margin-top: 15px;
+}
+
+.newdesign_homegettouch .title-block {
+    margin: 1% 0;
+    color: #000;
+}
+
+.get-in-touch-block .title-block h4 {
+    color: #156db7;
+    font-size: 35px;
+    font-weight: 500;
+    margin: 15px 0;
+}
+
+.newcareer-block .title-block h2,
+.newdesign_homegettouch .title-block h2 {
+    font-size: 24px;
+    margin-top: 0;
+    line-height: 1.5;
+}
+
+h2,
+h3,
+h4,
+h5 {
+    font-weight: 500;
+    line-height: 1.4;
+}
+
+.list-unstyled {
+    padding-left: 0;
+    list-style: none;
+}
+
+.newdesign_homegettouch .social-links ul li {
+    display: inline-block;
+    width: 12%;
+}
+
+.social-links ul li a {
+    color: #000;
+    padding: 8px 0;
+    display: block;
+    font-size: 16px;
+}
+
+.social-links ul li a img {
+    display: inline-block;
+    margin-right: 6px;
+}
+
+.get-in-touch-form {
+    margin: 18px 0 25px;
+    margin-left: 9%;
+}
+
+.get-in-touch-form .label {
+    font-weight: 500 !important;
+    font-size: 18px !important;
+}
+
+.visually-hidden {
+    position: absolute !important;
+    clip: rect(1px, 1px, 1px, 1px);
+    overflow: hidden;
+    height: 1px;
+    width: 1px;
+    word-wrap: normal;
+}
+
+.label {
+    display: inline-block;
+    max-width: 100%;
+    margin-bottom: 5px;
+    font-weight: 700;
+}
+
+.get-in-touch-block .form-control {
+    height: 45px;
+    box-shadow: none;
+    border-color: #dcdcdc;
+    margin: 15px 0;
+}
+
+.get-in-touch-block .form-control {
+    height: 45px;
+    box-shadow: none;
+    border: 0;
+    border-bottom: 1px #dcdcdc solid;
+    margin: 5px 0;
+    background: #f9f9f9;
+    padding: 0;
+}
+
+.newdesign_homegettouch {
+    color: #000;
+    padding: 70px 0;
+}
+
+.bg-secondary {
+    background-color: #6266ea !important;
+}
+
+.copyrights {
+    background-color: #4232c2 !important;
+}
+
+/* GET IN TOUCH CSS END */

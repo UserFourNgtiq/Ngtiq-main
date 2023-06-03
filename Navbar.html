@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar</title>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<!-- custom css -->
+<link rel="stylesheet" href="Navbar.css">
+</head>
+<body>
+    <div class="container-fluid" style=" font-family: 'Noto Sans', sans-serif;">
+        <nav class="navbar navbar-inverse">
+          <div class="navbar-header">
+              <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".js-navbar-collapse">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="#">
+                <img src="images(Navbar)/logo.png" alt="logo" width="120px">
+              </a>
+          </div>
+          
+         
+              <ul class="nav navbar-nav navbar-right shadow">
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Home</a>
+                    
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">About <span class="caret"></span></a>
+                    <ul class="dropdown-menu" role="menu" style="left:-35px">
+                      <li><a href="#">Partnership</a></li>
+                      <li><a href="#">Testimonial</a></li>
+                      <li><a href="#">Our Mission</a></li>
+                    </ul>
+                <li class="dropdown mega-dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Technology <span class="caret"></span></a>				
+                    <ul class="dropdown-menu mega-dropdown-menu">
+                        <li class="col-sm-3">
+                            <ul>
+                                <li class="dropdown-header">Benchmarking & Strategy</li>
+                                <li><a href="#">Accelerators</a></li>
+                                <li><a href="#">Competitive Benchmarking</a></li>
+                                <li><a href="#">Enterprise Data Strategy</a></li>
+                            </ul>
+                        </li>
+                        <li class="col-sm-3">
+                            <ul>
+                                <li class="dropdown-header">Technology Implementation</li>
+                                <li><a href="#">AI, ML</a></li>
+                                <li><a href="#">Analytics on Cloud Ecosystem - AWS</a></li>
+                                <li><a href="#">Analytics on Cloud Ecosystem - Azure</a></li>                            
+                                <li><a href="#">BI Reporting & Dashboards</a></li>							
+                                <li><a href="#">Big Data Analytics</a></li>							
+                                <li><a href="#">Data Lakes on Cloud</a></li>							
+                                <li><a href="#">Data Management Services / DW</a></li>							
+                                <li><a href="#">Data Mesh Services</a></li>							
+                                <li><a href="#">Data Migration to Cloud</a></li>							
+                                <li><a href="#">ETL Migration with AWS Glue</a></li>							
+                                <li><a href="#">Master Data Management</a></li>							
+                                <li><a href="#">Predictive & Prescriptive Analytics</a></li>							
+                            </ul>
+                        </li>
+                        <li class="col-sm-3">
+                            <ul>
+                                <li class="dropdown-header">Managed Services</li>
+                                <li><a href="#">Data Monetization</a></li>
+                                <li><a href="#">Data Governance</a></li>
+                                <li><a href="#">Data-as-a-Service</a></li>                         
+                            </ul>
+                        </li>
+                        <li class="col-sm-3">
+                            <ul>
+                                <li class="dropdown-header">Platform Services</li>
+                                <li><a href="#">Informatica</a></li>
+                                <li><a href="#">Looker</a></li>
+                                <li><a href="#">Power BI</a></li>  
+                                <li><a href="#">Snowflake</a></li>  
+                                <li><a href="#">Talend</a></li>  
+                                <li><a href="#">Tableau</a></li>  
+                                <li><a href="#">Qlik</a></li>  
+                            </ul>
+                        </li>
+                    </ul>				
+                </li>
+                <li class="dropdown mega-dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">App & Service <span class="caret"></span></a>				
+                    <ul class="dropdown-menu mega-dropdown-menu">
+                        <li class="col-sm-3">
+                            <ul>
+                                <li class="dropdown-header">Benchmarking & Strategy</li>
+                                <li><a href="#">Application Benchmarking</a></li>
+                                <li><a href="#">Application Modernization Roadmap</a></li>
+                                <li><a href="#">Customer Strategy</a></li>
+                                <li><a href="#">Digital Strategy</a></li>
+                            </ul>
+                        </li>
+                        <li class="col-sm-3">
+                            <ul>
+                                <li class="dropdown-header">Technology Services</li>
+                                <li><a href="#">Experience Design</a></li>
+                                <li><a href="#">Mobile Application Development</a></li>
+                                <li><a href="#">AWS Application Modernization</a></li>                            
+                                <li><a href="#">Application Modernization</a></li>							
+                                <li><a href="#">Custom Application Development</a></li>							
+                                <li><a href="#">Enterprise Portals, Content and Collaboration   </a></li>							
+                                <li><a href="#">Salesforce Development Services</a></li>							
+                            </ul>
+                        </li>
+                        <li class="col-sm-3">
+                            <ul>
+                                <li class="dropdown-header">Managed Services</li>
+                                <li><a href="#">Automation / RPA</a></li>
+                                <li><a href="#">Cloud Migration</a></li>
+                                <li><a href="#">Quality Engineering</a></li>
+                                <li><a href="#">Transformative Application Management (TAM)</a></li>                         
+                            </ul>
+                        </li>
+                        <li class="col-sm-3">
+                            <ul>
+                                <li class="dropdown-header">Managed Services</li>
+                                <li><a href="#">Automation / RPA</a></li>
+                                <li><a href="#">Cloud Migration</a></li>
+                                <li><a href="#">Quality Engineering</a></li>
+                                <li><a href="#">Transformative Application Management (TAM)</a></li>                         
+                            </ul>
+                        </li>
+                    </ul>				
+                </li>
+             
+                
+                <li class="dropdown mega-dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Hybrid Cloud <span class="caret"></span></a>				
+                    <ul class="dropdown-menu mega-dropdown-menu">
+                        <li class="col-sm-3">
+                            
+                                <ul>
+                                    <li class="dropdown-header">Benchmarking & Strategy</li>
+                                    <li><a href="#">Cloud Advisory Services</a></li>
+                                    <li><a href="#">Cloud Application Strategy</a></li>
+                                    <li><a href="#">Cloud Data and Analytics Strategy</a></li>
+                                    <li><a href="#">Cloud Infrastructure Strategy</a></li>
+                                    <li><a href="#">Cloud Security Strategy</a></li>
+                                    <li><a href="#">Competitive Cloud Benchmarking</a></li>
+                                    <li><a href="#">Competitive Infrastructure Benchmarking</a></li>
+                                    <li><a href="#">Enterprise Monitoring Strategy</a></li>
+                                    <li><a href="#">Infrastructure Strategy</a></li>
+                                    <li><a href="#">IT Service Management Strategy</a></li>
+                                </ul>
+                            
+                        </li>
+                        <li class="col-sm-3">
+                            <ul>
+                                <li class="dropdown-header">Technology Services</li>
+                                <li><a href="#">Private & Hybrid Cloud Architectures</a></li>
+                                <li><a href="#">Application Migrations</a></li>
+                                <li><a href="#">Infra & Platform Migrations</a></li>
+                                <li><a href="#">Platform Build and Deploy</a></li>
+                                <li><a href="#">IT Operations Management (ITOM)</a></li>
+                                <li><a href="#">IT Service Management (ITSM)</a></li>
+                                <li><a href="#">Secure Workplace Solutions</a></li>
+                                <li><a href="#">Enterprise Monitoring & APM</a></li>
+                                <li><a href="#">AIOps</a></li>
+                                <li><a href="#">Software Portfolio Optimization</a></li>
+                            </ul>
+                        </li>
+                        <li class="col-sm-3">
+                            <ul>
+                                <li class="dropdown-header">Managed Services</li>
+                                <li><a href="#">Hosting, Monitoring & Orchestration</a></li>
+                                <li><a href="#">Disaster recovery as a Service (DRaaS)</a></li>
+                                <li><a href="#">DevOps & Applications Management</a></li>
+                                <li><a href="#">Cloud Optimization</a></li>
+                                <li><a href="#">Predictive Cloud Consumption Analytics</a></li>
+                                <li><a href="#">Cloud Operations Management</a></li>
+                                <li><a href="#">Infrastructure Managed Services</a></li>
+                                <li><a href="#">Endpoint Management</a></li>
+                                <li><a href="#">ITSM Managed Services</a></li>
+                            </ul>
+                        </li>
+                        <li class="col-sm-3">
+                            <ul>
+                                <li class="dropdown-header">Platform Services</li>
+                                <li><a href="#">AppDynamics</a></li>
+                                <li><a href="#">AWS</a></li>
+                                <li><a href="#">Azure</a></li>
+                                <li><a href="#">BMC</a></li>                         
+                                <li><a href="#">Dynatrace</a></li>                         
+                                <li><a href="#">Google Cloud</a></li>                         
+                                <li><a href="#">IBM</a></li>                         
+                                <li><a href="#">Nutanix</a></li>                         
+                                <li><a href="#">ScienceLogic</a></li>                         
+                                <li><a href="#">ServiceNow</a></li>                         
+                                <li><a href="#">VMware</a></li>                         
+                            </ul>
+                        </li>
+                    </ul>				
+                </li>
+              </li>
+              <!-- Security & Services start -->
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Security & Services<span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu" style="right:-65px">
+                  <li><a href="#">Secure Applications Architecture</a></li>
+                  <li><a href="#">Cloud Security</a></li>
+                  <li><a href="#">Endpoint Security Services</a></li>
+                  <li><a href="#">Security Apps Integrations</a></li>
+                  <li><a href="#">Product Engineering & Cloud Migrations</a></li>
+                  <li><a href="#">IAM Implementation</a></li>
+                </ul>
+                <!-- Security & Services End -->
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Why Choose Us ? <span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu" style="left:-1px">
+                  <li><a href="#">Staff Augmentation</a></li>
+                  <li><a href="#">Engineering</a></li>
+                </ul>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Contact</a>
+                
+            </ul>
+          </div><!-- /.nav-collapse -->
+        </nav>
+      </div>
+
+
+      <script src="Navbar.js"></script>
+</body>
+</html>

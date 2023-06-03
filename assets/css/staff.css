@@ -1,0 +1,51 @@
+
+/* base styling */
+.mt-520{
+    margin-top: 520px !important;
+}
+/* heading style */
+.bg-image {
+    text-align: center;
+    height: 300px;
+    overflow: hidden;
+    
+}
+.bg-image-property {
+    max-width: 100%;
+    position: relative;
+}
+.heading-property {
+    margin: 210px 0 0 40px;
+    font-size: 5rem;
+    font-weight: 200;
+    text-align: start;
+}
+.heading-bg {
+    background: url('\\assets\\img\\user-one\\bg-header.jpg');
+    transform: translate(0, -180px);
+    max-width: 100%;
+    height: 680px;
+    position: absolute;
+    z-index: -1;
+}
+/* context style */
+.context-style {
+    padding: 15px;
+    font-size: 1.2rem;
+    text-align: justify;
+    word-wrap: break-word;
+    width: 100%;
+    height: fit-content;
+    font-weight: 500;
+}
+/* context ends */
+/* augmentation skills style */
+.skill-tab {
+    padding: 10px 50px; 
+    border: #760f8a 2px solid;
+    border-radius: 50px;
+    text-align: center;
+    max-width: max-content;
+    margin: auto;
+    font-weight: 600;
+}

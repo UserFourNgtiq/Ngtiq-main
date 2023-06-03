@@ -1,0 +1,1162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page2</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <!-- mystyle -->
+    <link rel="stylesheet" href="style.css">
+
+
+    <link href="assets/css/boxicon.min.css" rel="stylesheet">
+
+   
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'poppins,helvetica,arial,sans-serif;';
+
+        }
+
+        hr.new5 {
+            border: 2px solid rgb(147, 147, 232);
+            width: 78px;
+        }
+
+        h3 {
+            font-size: 24px;
+            font-weight: 500;
+            line-height: 1.5;
+        }
+
+        /* client-serv carousel */
+
+@keyframes slide {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+.logos {
+    border-top: 2px solid var(--bs-warning);
+    border-bottom: 2px solid var(--bs-warning);
+    overflow: hidden;
+    padding: 20px 0;
+    white-space: nowrap;
+}
+
+.logos:before,
+.logos:after {
+    position: absolute;
+    top: 0;
+    width: 250px;
+    height: 100%;
+    content: "";
+    z-index: 2;
+}
+
+.logos:before {
+    left: 0;
+}
+
+.logos:after {
+    right: 0;
+}
+
+.logos:hover .logos-slide {
+    animation-play-state: running;
+}
+
+.logos-slide {
+    display: inline-block;
+    animation: 90s slide infinite linear;
+}
+
+.logos-slide img {
+    margin: 0 40px;
+}
+
+        h3 {
+
+            font-family: inherit;
+            color: inherit;
+        }
+
+        img {
+            overflow-clip-margin: content-box;
+            overflow: clip;
+            border: 0;
+        }
+
+        .img {
+            vertical-align: middle;
+        }
+
+        .img {
+
+            display: block;
+            height: auto;
+        }
+
+        .myInfoImg {
+
+            cursor: pointer;
+            transition: 0.3s;
+            max-width: 80vh;
+            margin: 0 auto;
+            max-width: 85%;
+        }
+
+        .help {
+            background-color: white;
+            border: 1px solid wheat;
+            border-radius: 5px;
+            margin-left: 70px;
+            margin-right: 70px;
+        }
+
+        article {
+            --img-scale: 1.001;
+            --title-color: black;
+            --link-icon-translate: -20px;
+            --link-icon-opacity: 0;
+            position: relative;
+            border-radius: 16px;
+            box-shadow: none;
+            background: #fff;
+            transform-origin: center;
+            transition: all 0.4s ease-in-out;
+            overflow: hidden;
+        }
+
+        article a::after {
+            position: absolute;
+            inset-block: 0;
+            inset-inline: 0;
+            cursor: pointer;
+            content: "";
+        }
+
+        /* basic article elements styling */
+        article h2 {
+            margin: 0 0 18px 0;
+
+            font-size: 1.9rem;
+            letter-spacing: 0.06em;
+            color: var(--title-color);
+
+        }
+
+        figure {
+            margin: 0;
+            padding: 0;
+            aspect-ratio: 16 / 9;
+            overflow: hidden;
+        }
+
+        article img {
+            max-width: 100%;
+            transform-origin: center;
+            transform: scale(var(--img-scale));
+            transition: transform 0.4s ease-in-out;
+        }
+
+        .article-body {
+            padding: 24px;
+        }
+
+        article a {
+            display: inline-flex;
+            align-items: center;
+            text-decoration: none;
+            color: #28666e;
+        }
+
+        article a:focus {
+            outline: 1px dotted #28666e;
+        }
+
+        article a .icon {
+            min-width: 24px;
+            width: 24px;
+            height: 24px;
+            margin-left: 5px;
+            transform: translateX(var(--link-icon-translate));
+            opacity: var(--link-icon-opacity);
+            transition: all 0.3s;
+        }
+
+        /* using the has() relational pseudo selector to update our custom properties */
+        article:has(:hover, :focus) {
+            --img-scale: 1.1;
+            --title-color: #28666e;
+            --link-icon-translate: 0;
+            --link-icon-opacity: 1;
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+        }
+
+
+        /************************ 
+Generic layout (demo looks)
+**************************/
+
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+        }
+
+
+        .articles {
+            display: grid;
+            max-width: 1200px;
+            margin-inline: auto;
+            padding-inline: 24px;
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            gap: 24px;
+        }
+
+        @media(max-width: 960px) {
+            article {
+                container: card/inline-size;
+            }
+
+            .article-body p {
+                display: none;
+            }
+        }
+
+        card (min-width: 380px) {
+            .article-wrapper {
+                display: grid;
+                grid-template-columns: 100px 1fr;
+                gap: 16px;
+            }
+
+            .article-body {
+                padding-left: 0;
+            }
+
+            figure {
+                width: 100%;
+                height: 100%;
+                overflow: hidden;
+            }
+
+            figure img {
+                height: 100%;
+                aspect-ratio: 1;
+                object-fit: cover;
+            }
+        }
+
+        .sr-only:not(:focus):not(:active) {
+            clip: rect(0 0 0 0);
+            clip-path: inset(50%);
+            height: 1px;
+            overflow: hidden;
+            position: absolute;
+            white-space: nowrap;
+            width: 1px;
+        }
+
+        p {
+
+
+            display: block;
+            margin-block-start: 1em;
+            margin-block-end: 1em;
+            margin-inline-start: 0px;
+            margin-inline-end: 0px;
+        }
+
+        .myInfoImg {
+            cursor: pointer;
+            transition: .3s;
+            max-height: 80vh;
+            margin: 0 auto;
+            max-width: 85%;
+        }
+
+        img {
+            vertical-align: middle;
+        }
+
+        img {
+            border: 0;
+        }
+
+        img {
+            overflow-clip-margin: content-box;
+            overflow: clip;
+        }
+
+        .get-in-touch-block {
+            background: #F9F9F9;
+            padding: 5% 0;
+        }
+
+        .newdesign_homegettouch {
+            color: #000;
+        }
+
+        .re-get-bg {
+            margin-top: 15px;
+        }
+
+        .newdesign_homegettouch .title-block {
+            margin: 1% 0;
+            color: #000;
+        }
+
+        .get-in-touch-block .title-block h4 {
+            color: #156DB7;
+            font-size: 35px;
+            font-weight: 500;
+            margin: 15px 0;
+        }
+
+        .newcareer-block .title-block h2,
+        .newdesign_homegettouch .title-block h2 {
+            font-size: 24px;
+            margin-top: 0;
+            line-height: 1.5;
+        }
+
+        h2,
+        h3,
+        h4,
+        h5 {
+            font-weight: 500;
+            line-height: 1.4;
+        }
+
+        .list-unstyled {
+            padding-left: 0;
+            list-style: none;
+        }
+
+        .newdesign_homegettouch .social-links ul li {
+            display: inline-block;
+            width: 12%;
+        }
+
+        .social-links ul li a {
+            color: #000;
+            padding: 8px 0;
+            display: block;
+            font-size: 16px;
+        }
+
+        .social-links ul li a img {
+            display: inline-block;
+            margin-right: 6px;
+        }
+
+        .get-in-touch-form {
+            margin: 18px 0 25px;
+            margin-left: 9%;
+        }
+
+        .get-in-touch-form .label {
+            font-weight: 500 !important;
+            font-size: 18px !important;
+        }
+
+        .visually-hidden {
+            position: absolute !important;
+            clip: rect(1px, 1px, 1px, 1px);
+            overflow: hidden;
+            height: 1px;
+            width: 1px;
+            word-wrap: normal;
+        }
+
+        .label {
+            display: inline-block;
+            max-width: 100%;
+            margin-bottom: 5px;
+            font-weight: 700;
+        }
+
+        .get-in-touch-block .form-control {
+            height: 45px;
+            box-shadow: none;
+            border-color: #DCDCDC;
+            margin: 15px 0;
+        }
+
+        .get-in-touch-block .form-control {
+            height: 45px;
+            box-shadow: none;
+            border: 0;
+            border-bottom: 1px #DCDCDC solid;
+            margin: 5px 0;
+            background: #F9F9F9;
+            padding: 0;
+        }
+
+        .newdesign_homegettouch {
+            color: #000;
+            padding: 70px 0;
+        }
+
+        .bg-secondary {
+            background-color: #6266EA !important;
+        }
+
+        .copyrights {
+            background-color: #4232C2 !important;
+        }
+
+        #footer_top {
+            margin-top: 500px;
+        }
+    </style>
+
+    <!-- common page start(megamenu) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.js"
+    integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous">
+    </script>
+
+<script>
+    $(function () {
+        $("#megamenu").load("megamenu.html");
+        $("#getintouch").load("getintouch.html");
+        $("#footer").load("footer.html");
+
+
+
+    });
+</script>
+<!--  common page End -->
+</head>
+
+<body>
+     <!-- navbar start -->
+     <div id="megamenu"></div>
+     <!-- navbar End -->
+
+
+    <div class="container-fluid bg-img">
+
+        <div class="row text-white">
+            <div class="col-lg-6 col-sm-12">
+                <h6 style="margin-left: 100px; padding-top: 50px;">HOME / DIGITAL APPS
+
+
+                    <img src="image foldewr/download.png " style="padding-bottom: 3px;" height="17px" width="15px"> /
+                    ROBOTIC PROCESS AUTOMATION (RP...
+                    <img src="image foldewr/download.png" style="padding-bottom: 3px;" height="17px" width="15px">
+
+                </h6>
+
+                <br>
+
+                <h1 style="margin-left: 100px ;">
+
+                    Moving to the cloud is a game changer for digital transformation.
+
+                </h1>
+                <br>
+
+
+                <h5 style="margin-left: 100px;">
+                    Cloud Migration Consulting
+                </h5>
+
+                <br>
+                <br>
+
+                <!-- start -->
+                <button type="button" class="btn btn-danger" style="margin-left: 100px;" data-toggle="modal"
+                    data-target="#talkModal" role="dialog">Let's Talk</button>
+
+
+                <div class="modal fade" id="talkModal" tabindex="-1" aria-labelledby="talkModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog" role="dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="talkModalLabel">Call us Today</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times</span>
+                                </button>
+                            </div>
+
+                            <div class="modal-body">
+                                <form>
+
+                                    <div class="form-group">
+
+                                        <input type="text" class="form-control" id="recipient-name" placeholder="Name">
+                                    </div>
+                                    <div class="form-group">
+
+                                        <input type="text" class="form-control" id="recipient-name" placeholder="Email">
+                                    </div>
+                                    <div class="form-group">
+
+                                        <input type="text" class="form-control" id="recipient-name"
+                                            placeholder="company name">
+                                    </div>
+
+                                </form>
+                            </div>
+                            <p style="color: black; margin-left: 15px;">By submitting your information, you agree to our
+                                revised <a href="https://www.trianz.com/privacy-statement">Privacy Statement.</a></p>
+
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary">Let's Talk</button>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- modal end -->
+            </div>
+            <div class="col-lg-6 col-sm-12 text-white">
+
+                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img class="d-block " src="image foldewr/Forbes-and-ISG_23_10.png" alt="First slide"
+                                style="margin-top: 55px; margin-left: 77px;" height="270px" width="500px">
+                            <br>
+
+                            <h5 style="margin-left: 80px;">Recognized for best-in-class 'Market Chellenger' In the</h5>
+                            <h5 style="text-align: center;"> Digital Transformation
+                                Space by ISG </h5>
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block " src="image foldewr/ISG-Digital_18-201005_23.png" alt="Second slide"
+                                style="margin-top: 55px; margin-left: 77px;" height="270px" width="500px">
+                            <br>
+                            <h5 style="margin-left: 80px;">Recognized for best-in-class Advisory Excellence and </h5>
+                            <h5 style="text-align: center;">Strong Digital
+                                Capabilities</h5>
+                        </div>
+
+                    </div>
+                    <br>
+                    <br>
+                    <br>
+
+
+
+                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+                <div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div>
+    </div>
+
+    <br>
+    <br>
+
+
+    <h3 style="margin-left: 110px;">
+        Where Are You in Your Journey to Cloud?
+    </h3>
+
+    <hr class="new5" style="margin-left: 110px;">
+
+
+    <p style="text-align: center; margin-left: 110px; margin-right: 110px; 
+    font-size: 16px;
+    line-height: 1.6;
+    
+">
+        As industries reshape themselves, companies need to operate and compete at an unprecedented scale. The pandemic
+        created a new inflection point for businesses to accelerate their cloud migration because it enables one of the
+        key competitive differentiators that will help them remain relevant in the marketplace: seamless, end-to-end
+        digital transformations.
+
+        Although cloud’s adoption is accelerating, many industries lag when it comes to migrations. <a
+            href="http://www.ngtiq.com/" style="color: rgb(236, 93, 42);">Our
+            research findings</a> – which form the foundation of our Digital Enterprise Evolution Model (DEEM) for cloud
+        capability – suggest industries and companies are moving in a curvilinear path with investment in scalable cloud
+        infrastructure coming first, followed by the migration of applications or analytics.
+    </p>
+
+    <br>
+    <p style="text-align: center; text-decoration: none;font-size: 17px;">
+        Digital Enterprise Evolution Model™ - Cloud Capability
+    </p>
+
+
+    <img alt="Chart showing Trianz’s Digital Enterprise Evolution Model for Cloud Capabilities"
+        class="img-responsive myInfoImg" src="image foldewr/Cloud-Capability-Evolution-Image (2).png"
+        style="margin-left:170px;">
+    <br>
+
+
+    <hr>
+
+
+
+    <h3 style=" margin-left: 110px; 
+        font-size: 24px;
+    font-weight: 500;
+    line-height: 1.5;
+    
+">Cloud Migration Benefits</h3>
+
+    <hr class="new5" style="margin-left: 110px;">
+
+    <p style="margin-left: 110px; 
+font-size: 18px;">
+        The advantages you will realize by partnering with us on your cloud migration include:
+
+    </p>
+
+    <ul style="font-size: 16px
+    ; margin-left: 80px;">
+        <li style="margin-left: 110px; line-height: 3;">
+            Accelerated route to reduced Total Cost of Ownership
+
+        </li>
+        <li style="margin-left: 110px;  line-height: 3;">
+            Modernized and well architected framework for your applications and Infrastructure
+        </li>
+
+        <li style="margin-left: 110px; line-height: 3;">
+            Security, flexibility, and scalability for all your workloads
+        </li>
+
+        <li style="margin-left: 110px; line-height: 3;">
+            Optimized architecture preserving your existing investment on best of breed solutions
+        </li>
+    </ul>
+
+    <br>
+
+
+    <div class="container-fluid" style="background-color: rgb(239, 248, 248);">
+
+        <h3 style=" margin-left: 110px; 
+  font-size: 24px;
+font-weight: 500;
+line-height: 1.5;
+
+">
+            Our Cloud Capabilities
+        </h3>
+        <hr class="new5" style="margin-left: 110px;">
+
+        <p style="margin-left: 110px; 
+  font-size: 16px; margin-right: 110px;
+  text-align: center; line-height: 1.5;">
+
+            We offer end-to-end cloud migration consulting services with a holistic, cloud first approach – from
+            navigating the cloud, conducting a cloud assessment, developing a cloud strategy and roadmap, and selecting
+            the right architecture and ecosystem partners, to building the infrastructure, executing the migration, and
+            providing security consulting services, as well as post-migration support.
+
+        </p>
+        <br>
+
+
+        <div class="help">
+
+            <p style="margin-left: 80px;">
+                Benchmarking
+            </p>
+            <hr class="new5" style="margin-left: 80px;">
+            <p
+                style="margin-left: 70PX; margin-right: 110PX; text-align: center;text-decoration: none; font-size: 17px; line-height: 1.5;">
+                Our cloud benchmarking services – which leverage DEEM – will help you understand where your
+                organization’s capabilities lie on the maturity curve both in absolute and competitive terms. The
+                insights will be based on data from benchmarking your organization’s capabilities against industry peers
+                and the best-in-class across industries. This helps you understand where gaps are compared to the
+                competition, as well as where to invest your time, effort, and resources to maximize your returns. <a
+                    href="https://www.shopify.com/blog/what-is-benchmarking" style="color: orangered;">Learn more about
+                    cloud benchmarking.</a>
+            </p>
+
+        </div>
+        <br>
+
+
+        <section class="articles">
+            <article>
+                <div class="article-wrapper">
+                    <figure>
+                        <img src="image foldewr/Leverage-Two-Decades.jpg" alt="" />
+                    </figure>
+                    <div class="article-body">
+                        <h2>Cloud Infrastructure</h2>
+                        <p>
+                            Drawing from our extensive IaaS and PaaS experience, we will help you build a sustainable
+                            competitive advantage. Learn more:
+                        </p>
+
+
+                    </div>
+                </div>
+            </article>
+            <article>
+
+                <div class="article-wrapper">
+                    <figure>
+                        <img src="image foldewr/Join-Us-AboutUs.png" alt="" />
+                    </figure>
+                    <div class="article-body">
+                        <h2>Cloud Management and Optimization</h2>
+                        <p>
+                            We will leverage the efficiencies of artificial intelligence and machine learning to
+                            automate your future. Find out more by exploring our services:
+                        </p>
+
+
+
+                    </div>
+                </div>
+            </article>
+            <article>
+
+                <div class="article-wrapper">
+                    <figure>
+                        <img src="image foldewr/Excerpts-02.jpg" alt="" />
+                    </figure>
+                    <div class="article-body">
+                        <h2>Cloud Analytics</h2>
+                        <p>
+                            We will deploy the cloud analytics solutions necessary to propel your business forward –
+                            and, through our partnerships with AWS, Azure, and Salesforce, we will get you real-time,We
+                            will deploy the cloud analytics
+                        </p>
+
+
+                    </div>
+                </div>
+            </article>
+        </section>
+        <br>
+        <br>
+
+
+        <h3 style="margin-left: 110px;">Cloud Migration</h3>
+        <hr class="new5" style="margin-left: 110px;">
+
+        <p style="margin-left: 110px; 
+  font-size: 16px; margin-right: 110px;
+   line-height: 1.5;">
+            Our specialists will use cloud-native technologies and pre-built accelerators to migrate your legacy
+            applications to the cloud for increased performance and availability. Our services include:
+        </p>
+
+
+        <p>
+        <ul style="margin-left: 110px; line-height: 3.7 ; font-size: 16px; color: rgb(241, 142, 106);list-style: none;">
+            <a href="https://www.leaplogic.io/book-a-demo.php?utm_source=adwords&utm_medium=search&utm_campaign=CM-IN&creative=651421224866&keyword=transformation%20to%20the%20cloud&matchtype=p&network=g&device=c&gad=1&gclid=EAIaIQobChMI5tvy7LzH_gIVQZJmAh1iEAS7EAAYASAAEgKr7PD_BwE"
+                style="color: rgb(241, 142, 106);">
+                <li>
+                    Legacy Application Migration to Cloud >
+                </li>
+            </a>
+
+            <a href="https://www.vultr.com/promo/try250/?service=try250&promo=FLYVULTR250&utm_source=google-apac-nonbrand&utm_medium=paidmedia&obility_id=139039965533&utm_campaign=&utm_term=azure%20database&utm_content=612053453160&gclid=EAIaIQobChMI-oi6-bzH_gIVpplmAh1mnwsvEAAYAyAAEgJaFPD_BwE"
+                style="color: rgb(241, 142, 106);">
+                <li>
+                    Azure Database Migration >
+                </li>
+            </a>
+            <a href="https://aws.amazon.com/pm/ec2-graviton/?trk=dab92267-e340-4581-bd5d-746cf58f7be9&sc_channel=ps&ef_id=EAIaIQobChMI1PDul77H_gIVUx0rCh0s1ATSEAAYASAAEgItcPD_BwE:G:s&s_kwcid=AL!4422!3!525855180470!p!!g!!amazon%20web%20servers!13385421284!122610751629"
+                style="color: rgb(241, 142, 106);">
+                <li>
+                    Amazon Web Services (AWS) RDS Migration>
+
+                </li>
+            </a>
+        </ul>
+
+        </p>
+        <p>
+        <ul style="text-align: center; color: rgb(243, 151, 117); line-height: 3.7; font-size: 16px;
+     margin-top: -195px; ">
+            <a href="https://aws.amazon.com/free/compute/?trk=fb8718a7-d9f7-4e07-9fc5-b85de26b4178&sc_channel=ps&ef_id=EAIaIQobChMI8LCDkbrH_gIVrpNmAh0Blw63EAAYASAAEgKOVvD_BwE:G:s&s_kwcid=AL!4422!3!476942607298!e!!g!!aws%20cloud!11542865500!116152063887"
+                style="
+         color: rgb(243, 151, 117);">
+                <li>
+                    Application Migration to Cloud >
+                </li>
+            </a>
+
+            <A href="https://mailchimp.com/features/domains/?ds_c=3Q_AOC_Google_Search_ROA_EN_NB_Retarget_Broad_MKAG_T4&gclid=EAIaIQobChMIw9SVvLrH_gIVwTKtBh2IWg0pEAAYAiAAEgLbBvD_BwE&gclsrc=aw.ds"
+                style="color: rgb(243, 151, 117);">
+                <li>
+                    Netezza Migration Services >
+                </li>
+            </A>
+
+            <a href="https://star-knowledge.com/application-migration/" style="color: rgb(243, 151, 117);">
+                <li>
+                    Applications Migration Assessments Consulting >
+                </li>
+            </a>
+        </ul>
+        </p>
+
+        <p>
+        <ul style="text-align: right; color: rgb(243, 151, 117); line-height: 3.7; font-size: 16px;
+     margin-top: -195px; margin-right: 120px; ">
+            <a href="https://aws.amazon.com/pm/ec2-graviton/?trk=dab92267-e340-4581-bd5d-746cf58f7be9&sc_channel=ps&ef_id=EAIaIQobChMI1PDul77H_gIVUx0rCh0s1ATSEAAYASAAEgItcPD_BwE:G:s&s_kwcid=AL!4422!3!525855180470!p!!g!!amazon%20web%20servers!13385421284!122610751629"
+                style="color: rgb(241, 142, 106);">
+                <li>
+                    Data Migration >
+                </li>
+            </a>
+            <a href="https://sso.vanus.ai/login?state=hKFo2SBGRG9Qdkk4UFl3RFFfOTNBSThXM0twVWJsNnE5Nnp5c6FupWxvZ2luo3RpZNkgUDRObl83eV8xUXB0b0VYMTNPdnVSbndnaEpjUW1SVVKjY2lk2SBtSlk0eUg1WU9UQ0w2TUNPcXFKV2tobGJrRHNZZHVENA&client=mJY4yH5YOTCL6MCOqqJWkhlbkDsYduD4&protocol=oauth2&redirect_uri=https%3A%2F%2Fcloud.vanus.ai%2Fapi%2Fauth%2Fcallback&response_type=code&scope=profile%20email%20openid"
+                style="color: rgb(241, 142, 106);">
+                <li>
+                    PCI Compliant Data Migration to AWS >
+                </li>
+            </a>
+
+            <a href="https://www.scalefactory.com/consulting/packages/migration-assessment/"
+                style="color: rgb(241, 142, 106);">
+                <li>
+                    Migration Assessments Consulting >
+                </li>
+            </a>
+        </ul>
+        </p>
+
+
+
+    </div>
+
+    <br>
+
+
+    <h3 style="margin-left: 110px;">Accelerators and Software IP</h3>
+    <hr class="new5" style="margin-left: 110px;">
+
+    <h6 style="margin-left: 110px; margin-right: 110px;">
+        We continuously invest in accelerators and software IP developed by us or jointly with partners. We’ve built
+        multiple next-gen products and IPs, which have been deployed by our clients in multiple projects to
+        conceptualize ideas on an ongoing basis:
+    </h6>
+
+    <br>
+
+    <!-- card strats -->
+    <div class="container-fluid">
+
+        <div class="row ">
+            <div class="col-6">
+
+                <div class="card float-left bg-light" style="margin-left: 85px;">
+                    <div class="row ">
+
+                        <div class="col-sm-7">
+                            <div class="card-block">
+                                <!--           <h4 class="card-title">Small card</h4> -->
+                                <strong>
+                                    <p style="margin-left: 15px;">
+                                        Process Assessment</p>
+                                </strong>
+                                <p style="margin-left: 15px;">We will identify candidate processes to better serve your
+                                    automation needs and expectations.</p>
+
+                            </div>
+                        </div>
+
+                        <div class="col-sm-5">
+                            <img class="d-block w-100" src="image foldewr/Arxway-Logo.webp" alt=""
+                                style="margin-top: 45 px;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-6">
+
+                <div class="card float-left bg-light">
+                    <div class="row ">
+
+                        <div class="col-sm-7">
+                            <div class="card-block">
+                                <!--           <h4 class="card-title">Small card</h4> -->
+                                <strong>
+                                    <p style="margin-left: 15px;">Technology Assessment and Recommendations</p>
+                                </strong>
+                                <p style="margin-left: 15px;">We review current platforms and suggest upgrades or
+                                    replacements to support your.</p>
+
+                            </div>
+                        </div>
+
+                        <div class="col-sm-5">
+                            <img class="d-block w-100" src="image foldewr/cc-thumb-new.webp" alt="">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="col-6">
+
+
+                <p class="container-fluid" style="margin-top: 20px;">
+
+                <div class="card float-left bg-light" style="margin-left: 85px;">
+                    <div class="row ">
+
+                        <div class="col-sm-7">
+                            <div class="card-block">
+                                <!--           <h4 class="card-title">Small card</h4> -->
+                                <strong>
+                                    <p style="margin-left: 15px;">Technology Assessment and Recommendations</p>
+                                </strong>
+                                <p style="margin-left: 15px;">We review current platforms and suggest upgrades or
+                                    replacements to support your.</p>
+
+                            </div>
+                        </div>
+
+                        <div class="col-sm-5">
+                            <img class="d-block w-100" src="image foldewr/cc-thumb-new.webp" alt="">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        <!-- card end -->
+
+        <br>
+        <br>
+
+
+        <h3 style="margin-left: 90px;
+                    font-size: 24px;
+                    font-weight: 500;
+                    line-height: 1.5;
+                ">
+             NGTIQ Data-Driven Approach to Cloud Migration Consulting
+        </h3>
+
+        <hr class="new5" style="margin-left: 90px;">
+
+        <p style="margin-left: 110px; margin-right: 110px;">
+            Our diverse clientele includes global Fortune 500 corporations and emerging, innovative companies across
+            industries – and our commitment to high-quality services and strategic, long-term relationships have earned
+            us the reputation <br>
+
+            <br> as the “Partner of Choice” of cloud providers. And one of the ways we have been able to achieve this is
+            because of our data-driven approach.
+
+            Through our research arm, Trasers, we have invested in one of the world’s largest databases on digital
+            transformations – with data from more
+            <br>
+            <br>than 5,000 companies across 20 industries. We’ve spoken to business and IT leaders across enterprises to
+            understand what digitalization means to them, where they think they are, how they execute, and how they’re
+            prioritizing when it comes to the cloud.
+
+            While fewer than 25% of global companies recognize the disruptive power of cloud, more than 50% of “digital
+            champions” – what we call the 7% of organizations that succeed with their digital transformations – believe
+            the cloud helps disrupt their business model.
+        </p>
+        <br>
+
+
+
+        <p style="text-align: center;">
+            Is the Cloud Relevant?
+            <br>
+
+            % of Global IT Decision Makers That Agree and Disagree
+        </p>
+
+
+        <img alt="User Feedback and Smarter IT Investments" class="img-responsive myInfoImg"
+            src="image foldewr/cloud-migration-consulting-chart3 (1).png">
+    </div>
+
+    <hr>
+
+    <!--  -->
+    <h3 style="margin-left: 110px;">
+
+
+
+        Case Studies: Business Impacts and Transformational Outcomes
+    </h3>
+
+    <hr class="new5" style="margin-left: 110px;">
+
+    <p style="margin-left: 120px;font-size: 20px; margin-right: 110px;">
+        Organizations that have engaged ngtiq have achieved considerable acceleration in innovation and business value.
+        For instance, created a secure, scalable, and industry-compliant cloud platform for a leading global
+        healthcare provider that delivered an 80% reduction in downtime as well as reduced the timespan to deliver a new
+        application based on demand.
+    </p>
+
+
+    <p style="margin-left: 120px;font-size: 19px;">
+        Explore some of our other cloud migration case studies:
+    </p>
+
+    <ul style="margin-left: 120px; font-size: 20px; color: orangered; line-height: 3;">
+        <a href="https://uit.stanford.edu/storage/google-cloud-platform-cloud-storage" style="color:rgb(236, 109, 63)">
+            <li>
+                Micro-Services Migration – On-Prem to AWS Cloud
+            </li>
+        </a>
+        <a href="https://uit.stanford.edu/storage/google-cloud-platform-cloud-storage" style="color:rgb(236, 109, 63)">
+            <li>
+                Cloud Hosting
+            </li>
+        </a>
+        <a href="https://www.forbes.com/sites/kyndryl/2022/12/12/three-steps-to-a-successful-cloud-transformation/?sh=213f5f2c6b9f"
+            style="color:rgb(236, 109, 63)">
+            <li>
+                Transform Business and IT Ops with Public Cloud
+            </li>
+        </a>
+    </ul>
+
+    <!-- client we serve carousel -->
+    <div class="container-fluid mx-0 my-1">
+        <div class="logos">
+            <div class="logos-slide">
+                <img src="assets/img/user-one/data-manage-ana-serv/carousel-logo/5.png">
+                <img src="assets/img/user-one/data-manage-ana-serv/carousel-logo/chubb.png">
+                <img src="assets/img/user-one/data-manage-ana-serv/carousel-logo/Comcast_0.png">
+                <img src="assets/img/user-one/data-manage-ana-serv/carousel-logo/discounttire.png">
+                <img src="assets/img/user-one/data-manage-ana-serv/carousel-logo/Facebook-Logo-wine.png">
+                <img src="assets/img/user-one/data-manage-ana-serv/carousel-logo/FICO.png">
+                <img src="assets/img/user-one/data-manage-ana-serv/carousel-logo/Johnson-&-Johnson--Logos.png">
+                <img src="assets/img/user-one/data-manage-ana-serv/carousel-logo/Lyft_logo-1.png">
+                <img src="assets/img/user-one/data-manage-ana-serv/carousel-logo/mastercard.webp">
+                <img src="assets/img/user-one/data-manage-ana-serv/carousel-logo/Meryl-Lynch.png">
+                <img src="assets/img/user-one/data-manage-ana-serv/carousel-logo/Prologis.png">
+                <img src="assets/img/user-one/data-manage-ana-serv/carousel-logo/signode.webp">
+            </div>
+        </div>
+    </div>
+    <script>
+        var copy = document.querySelector(".logos-slide").cloneNode(true);
+        document.querySelector(".logos").appendChild(copy);
+    </script>
+    <!-- client we serve carousel end -->
+
+
+
+
+
+    <!--  -->
+
+    <div class="container" style="margin-top: 50px
+;">
+
+        <h3 style="margin-left: 1px;">Migrate to the Cloud to Better Position Your Business</h3>
+
+
+        <hr class="new5" style="margin-left: 1px;">
+
+        <p style="margin-left: 1px;">
+            As we help to drive automation into your business processes, we also increase visibility into complex
+            production
+            environments. Data generated from RPA <br>can help you to see pain points and opportunities that
+            can drive efficiency <br>
+
+            <br>
+            far beyond the top line numbers that come with <a href="http://www.ngtiq.com/ "
+                style="color: orangered;">intelligent
+                automation.</a> Data generated from RPA-driven processes may also be used as inputs into advanced <br>
+            <br>
+
+            analytics that drive operational efficiencies even higher.
+
+            Through custom analytics work built from best-in-class automation platforms,<br>
+
+            we can offer you a deep, real-time perspective into your business operations.
+
+            We cover every phase of RPA consultation and service, including:
+        </p>
+
+    </div>
+    <!--  -->
+    <div class="container">
+        <div class="jumbotron text-white" id="jumbo">
+            <h3> Experience the Trianz Difference</h3>
+            <br>
+
+            <p class="lead">Trianz enables digital transformations through effective strategies and excellence in
+                execution.
+                Collaborating with business and technology leaders, we help formulate and execute operational strategies
+                to
+                achieve intended business outcomes by bringing the best of consulting, technology experiences, and
+                execution
+                models.</p>
+            <hr class="my-4">
+            <p>Powered by knowledge, research, and perspectives, we enable clients to transform their business
+                ecosystems
+                and achieve superior performance by leveraging infrastructure, cloud, analytics, digital and security
+                paradigms. Reach out to get in touch or learn more.</p>
+
+        </div>
+    </div>
+
+
+
+
+
+   <!-- getintouch start -->
+   <div id="getintouch"></div>
+   <!-- getintouch end -->
+   <!-- footer start -->
+   <div id="footer"></div>
+   <!-- footer ENd -->
+
+
+
+    <!-- b4.6 cdn for js -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
+        integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
+        crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>

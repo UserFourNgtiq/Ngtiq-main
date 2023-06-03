@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Cybersecurity-Case study</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="apple-touch-icon" href="assets/NGTIQ LOGO/ngt-iq-logo-zip-file (1)/svg/logo-no-background.svg">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/NGTIQ LOGO/favicon.ico">
+    <!-- Load Require CSS -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font CSS -->
+    <link href="assets/css/boxicon.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Load Tempalte CSS -->
+    <link rel="stylesheet" href="assets/css/templatemo.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/custom.css">
+    <link rel="stylesheet" href="assets/css/User-five.css">
+    <link rel="stylesheet" href="assets/css/user-one.css">
+
+
+    </head>
+    <body>
+    <!-- Header -->
+    <nav id="main_nav" class="navbar sticky-top navbar-expand-lg navbar-light bg-white shadow m-0">
+        <div class="container-fluid d-flex">
+
+            <a class="navbar-brand m-0 p-0 h1" href="index.html">
+                <div class="logo">
+                    <img class="logo"
+                        src="./assets/ngtiq logo 2/ngt-iq-high-resolution-logo-color-on-transparent-background.png">
+                </div>
+
+            </a>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbar-toggler-success" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse d-flex flex-column m-0 p-0"
+                id="navbar-toggler-success">
+                <div class="navbar d-flex align-self-end m-0 p-0">
+                    <a class="nav-link" href="#"><i class='bx bx-bell bx-sm bx-tada-hover text-primary'></i></a>
+                    <a class="nav-link" href="#"><i class='bx bx-cog bx-sm text-primary'></i></a>
+                    <a class="nav-link" href="#"><i class='bx bx-user-circle bx-sm text-primary'></i></a>
+                </div>
+                <div class="flex-fill align-self-end">
+                    <ul class="nav navbar-nav d-flex m-0 p-0">
+                        <li class="nav-item my-auto">
+                            <a class="nav-link btn-outline-primary rounded-pill px-3" href="index.html">Home</a>
+                            <!-- <div class="dropdown-content">
+                                <a href="#">Link 1</a>
+                                <a href="#">Link 2</a>
+                                <a href="#">Link 3</a>
+                            </div> -->
+                        </li>
+
+                        <!-- <li class="nav-item">
+                        <div class="dropdown">
+                            <button class="dropbtn">Dropdown</button>
+                            <div class="dropdown-content">
+                              <a href="#">Link 1</a>
+                              <a href="#">Link 2</a>
+                              <a href="#">Link 3</a>
+                            </div>
+                          </div>
+                        </li> -->
+
+
+                        <li class="nav-item my-auto">
+                            <a class="nav-link btn-outline-primary rounded-pill px-3" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item my-auto">
+                            <a class="nav-link btn-outline-primary rounded-pill px-3" onclick="appNav()" style="cursor: pointer !important;">Technology</a>
+                        </li>
+                        <li class="nav-item my-auto">
+                            <a class="nav-link btn-outline-primary rounded-pill px-3" onclick="appNav()" style="cursor: pointer !important;">Apps &
+                                Services</a>
+                        </li>
+                        <li class="nav-item my-auto">
+                            <a class="nav-link btn-outline-primary rounded-pill px-3" href="contact.html">Contact</a>
+                        </li>
+                        <li class="nav-item my-auto">
+                            <a class="nav-link btn-outline-primary rounded-pill px-3" href="staff.html">Staff
+                                Augmentation</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- onclick nav-links under nav-tab  -->
+    <!-- technology tabs -->
+    <div class="container-fluid navbar-nav-scroll navTab-style" id="techTab" style="display: none !important;">
+        <div class="row">
+            <div class="col-lg-3 col-md-6 col-sm-12 p-5">
+                <h4 class="nav-link-head-style text-primary">Benchmarking & Strategy</h4>
+                <a class="nav-link-style d-block" href="accelarators.html">Accelerators</a>
+                <a class="nav-link-style d-block" href="competitive-analytics.html">Competitive Benchmarking</a>
+                <a class="nav-link-style d-block" href="enterprise-data-strategy.html">Enterprise Data Strategy</a>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 p-5">
+                <h4 class="nav-link-head-style text-primary">Technology Implementation</h4>
+                <a class="nav-link-style d-block" href="ai-ml.html">AI, ML</a>
+                <a class="nav-link-style d-block" href="analytics-cloud-aws.html">Analytics on Cloud Ecosystem-AWS</a>
+                <a class="nav-link-style d-block" href="analytics-cloud-azure.html">Analytics on Cloud
+                    Ecosystem-Azure</a>
+                <a class="nav-link-style d-block" href="bi-intelligence.html">BI Reporting & Dashboards</a>
+                <a class="nav-link-style d-block" href="big-data-ana-consult.html">Big Data Analytics</a>
+                <a class="nav-link-style d-block" href="data-lakes-cloud.html">Data Lakes on Cloud</a>
+                <a class="nav-link-style d-block" href="bi-intelli-migration-serv.html">BI Migration Services</a>
+                <a class="nav-link-style d-block" href="data-manage-ana-serv.html">Data Management Services / DW</a>
+                <a class="nav-link-style d-block" href="data-mesh-serv.html">Data Mesh Services</a>
+                <a class="nav-link-style d-block" href="data-migration-to-cloud.html">Data Migration to Cloud</a>
+                <a class="nav-link-style d-block" href="ETL-Migration.html">ETL Migration with AWS Glue</a>
+                <a class="nav-link-style d-block" href="master-data-management.html">Master Data Management</a>
+                <a class="nav-link-style d-block" href="prescriptive.html">Predictive & Prescriptive Analytics</a>
+
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 p-5">
+                <h4 class="nav-link-head-style text-primary">Managed Services</h4>
+                <a class="nav-link-style d-block" href="Data Monetization.html">Data Monetization</a>
+                <a class="nav-link-style d-block" href="Data Governance.html">Data Governance</a>
+                <a class="nav-link-style d-block" href="data-as-a-service.html">Data-as-a-Service</a>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 p-5">
+                <h4 class="nav-link-head-style text-primary">Platform Services</h4>
+                <a class="nav-link-style d-block" href="platform-services-informatica.html">Informatica</a>
+                <a class="nav-link-style d-block" href="platform-services-looker.html">Looker</a>
+                <a class="nav-link-style d-block" href="platform-services-powerBI.html">Power BI</a>
+                <a class="nav-link-style d-block" href="platform-services-snowflake.html">Snowflake</a>
+                <a class="nav-link-style d-block" href="platform-services-talend.html">Talend</a>
+                <a class="nav-link-style d-block" href="platform-services-tableau.html">Tableau</a>
+                <a class="nav-link-style d-block" href="platform-services-qlik.html">Qlik</a>
+            </div>
+        </div>
+    </div>
+    <!-- technology tab end -->
+    <!-- apps & services tab -->
+    <div class="container-fluid navbar-nav-scroll navTab-style" id="appserviceTab" style="display: none !important;">
+        <div class="row">
+            <div class="col-lg-3 col-md-6 col-sm-12 p-5">
+                <h4 class="nav-link-head-style text-primary">Benchmarking & Strategy</h4>
+                <a class="nav-link-style d-block" href="#">Application Benchmarking</a>
+                <a class="nav-link-style d-block" href="#">Application Modernization Roadmap</a>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 p-5">
+                <h4 class="nav-link-head-style text-primary">Technology Services</h4>
+                <a class="nav-link-style d-block" href="experience.html">Experience Design</a>
+                <a class="nav-link-style d-block" href="mobile-application.html">Mobile Application Development</a>
+                <a class="nav-link-style d-block" href="aws-application-modern.html">AWS Application Modernization</a>
+                <a class="nav-link-style d-block" href="applicationModernization.html">Application Modernization</a>
+                <a class="nav-link-style d-block" href="customApplicationDevelopment.html">Custom Application
+                    Development</a>
+                <a class="nav-link-style d-block" href="enterprisePortals.html">Enterprise Portals, Content and
+                    Collaboration</a>
+                <a class="nav-link-style d-block" href="salesforceDevelopment.html">Salesforce Development Services</a>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 p-5">
+                <h4 class="nav-link-head-style text-primary">Managed Services</h4>
+                <a class="nav-link-style d-block" href="RPA service.html">Automation / RPA</a>
+                <a class="nav-link-style d-block" href="Cloud-&-Migration.html">Cloud Migration</a>
+                <a class="nav-link-style d-block" href="QualityEngineeringTesting.html">Quality Engineering</a>
+                <a class="nav-link-style d-block" href="TransformativeApplicationManagement.html">Transformative
+                    Application Management (TAM)</a>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 p-5">
+                <h4 class="nav-link-head-style text-primary">Platform Services</h4>
+                <a class="nav-link-style d-block" href="A&E-PS-automationAnywhere.html">Automation Anywhere</a>
+                <a class="nav-link-style d-block" href="A&E-PS-drupal.html">Drupal</a>
+                <a class="nav-link-style d-block" href="A&E-PS-microsoft.html">Microsoft</a>
+                <a class="nav-link-style d-block" href="A&E-PS-Salesforce.html">Salesforce</a>
+                <a class="nav-link-style d-block" href="A&E-PS-Sharepoint.html">Microsoft Sharepoint</a>
+                <a class="nav-link-style d-block" href="A&E-PS-UIPath.html">UiPath</a>
+
+            </div>
+        </div>
+    </div>
+    <!-- script for navtab -->
+    <script>
+        var x = document.getElementById("tectTab");
+        var y = document.getElementById("appserviceTab")
+        function appNav() {
+            var x = document.getElementById("appserviceTab");
+            var y = document.getElementById("techTab");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+                if (y.style.display === "none" && x.style.display === "none") {
+                    y.style.display = "block";
+                }
+                else {
+                    y.style.display = "none";
+                }
+            }
+            else if (y.style.display === "none") {
+                y.style.display = "block";
+                if (x.style.display === "none" && y.style.display === "none") {
+                    x.style.display = "block";
+                }
+                else {
+                    x.style.display = "none";
+                }
+            }
+        }
+    </script>
+    <!-- apps & services tab end -->
+    <!-- Close Header & nav -->
+
+    <!-- banner-start -->
+    <div class="clear-fix"></div>
+    <div class="inner-page-banner  ">
+        <div class="image-container">
+            <img src="https://img.freepik.com/free-vector/blue-data-technology-background-with-circuit-board_53876-119577.jpg?size=626&ext=jpg&ga=GA1.1.68838839.1679909766&semt=ais" alt="Sorry for the inconvience" style="width: 100%; height: 90%;">
+        </div>
+        <div class="text-overlay">
+            <h1 class="display-5" style="font-weight: 800;"><center>Tools and technology to improve the science of decision-making at Emirates NBD</center></h1><br>
+            <!-- <h2 class="" style="font-weight: 700; font-size: 131%;"> Our security-first approach empowers <br> our clients to engage and enable a </h2> -->
+        </div>
+        <div>
+            <button type="button" class="btn btn-primary button-overlay-2"  data-toggle="modal" data-target="#exampleModal" style="background: #f60; border: none;"><span style="margin-top: -12%;">Cyber Security</span> </button>
+        </div>
+        
+        <div>
+            <button type="button" class="btn btn-primary button-overlay-3 mx-3" data-toggle="modal" data-target="#exampleModal" style="background: #f60; color: #fff; border: none;"><span style="margin-top: -10%;">Stories of Change</span></button>
+        </div>
+    </div>
+    
+    <!-- banner-end -->
+
+    <!-- content-start -->
+    <div class="row-2">
+			
+        <!-- <p id="breadcrumbs"><span><span><a href="https://www.d4insight.com/">Home</a></span> » <span class="breadcrumb_last" aria-current="page">Tools and technology to improve the science of decision-making at Emirates NBD</span></span></p>			 -->
+        <div class="post-area col  span_12 col_last">
+        
+        
+<article id="post-732" class="post-732 post type-post status-publish format-standard has-post-thumbnail category-cyber-security">
+
+<div class="inner-wrap">
+
+    <div class="post-content" data-hide-featured-media="0">
+  
+    <div class="content-inner">
+    <div id="fws_64539865e0ee9" data-column-margin="default" data-midnight="dark" class="wpb_row vc_row-fluid vc_row standard_section " style="padding-top: 0px; padding-bottom: 0px; "><div class="row-bg-wrap" data-bg-animation="none" data-bg-overlay="false"><div class="inner-wrap"><div class="row-bg"></div></div><div class="row-bg-overlay"></div></div><div class="row_col_wrap_12 col span_12 dark left">
+<div class="vc_col-sm-12 wpb_column column_container vc_column_container col no-extra-padding inherit_tablet inherit_phone instance-0" data-t-w-inherits="default" data-bg-cover="" data-padding-pos="all" data-has-bg-color="false" data-bg-color="" data-bg-opacity="1" data-hover-bg="" data-hover-bg-opacity="1" data-animation="" data-delay="0">
+    <div class="vc_column-inner"><div class="column-bg-overlay-wrap" data-bg-animation="none"><div class="column-bg-overlay"></div></div>
+        <div class="wpb_wrapper">
+            
+<div class="wpb_text_column wpb_content_element ">
+<div class="wpb_wrapper">
+    <h3><strong>The Challenge</strong></h3>
+<p>Fastest growing bank in the region – huge volume of data, variety of sources. Complexity in terms of managing, securing and using it to generate useful insights that improve business decisions. Requires the right set of technology and tools that can be real-time with the same pace at which the data is generated. The biggest challenge being the platform refresh and move out from legacy in terms of technology, skills, processes etc, that enable happy customers for the bank.</p>
+<h3><strong>The Approach</strong></h3>
+<ul>
+<li>Decision to move from traditional to open source big data technologies.</li>
+<li>Use of dynamic templates to create the data lake and for supporting Mass Data Ingestion.</li>
+<li>Using industry standard model for building the warehouse leveraging cutting-edge technologies.</li>
+<li>More focus on data governance and profiling.</li>
+<li>Real time data processing.</li>
+</ul>
+<h3><strong>Technologies</strong></h3>
+<ul>
+<li>Big data technologies like Hadoop, Spark, Hive, Oozie, Sqoop, etc.</li>
+<li>Informatica BDM, Informatica PowerCenter.</li>
+<li>SAP FSDM (Financial Services Data Model).</li>
+<li>Informatica EDC, CDC and MDM.</li>
+<li>HBASE, Flink, Beam, Kafka.</li>
+<li>Jenkins, Shell Scripting, GitHub.</li>
+</ul>
+<h3><strong>Enterprise data, Data quality, Governance &amp; management challenges</strong></h3>
+<ul>
+<li>Managing enterprise data.</li>
+<li>Change management.</li>
+<li>360° view of customers, products.</li>
+<li>Data security &amp; ownership.</li>
+<li>Regulatory &amp; international standards.</li>
+<li>AML ( Anti Money Laundering).</li>
+<li>Poor data integration.</li>
+</ul>
+<h3><strong>Solution</strong></h3>
+<ul>
+<li>Identifying Enterprise Masters.</li>
+<li>Defining the data ownership and lifecycle.</li>
+<li>Creating and maintaining an Enterprise Business Glossary.</li>
+<li>Periodical data quality monitoring of masters.</li>
+</ul>
+<p>Setting up a data governance council</p>
+<h3><strong>Tools Used</strong></h3>
+<ul>
+<li>Data governance – Informatica Axon.</li>
+<li>Data quality – Informatica Big Data Quality.</li>
+<li>Data lineage – Informatica EDC.</li>
+<li>Master data management – Informatica MDM.</li>
+<li>Customer data screening – Fircosoft Trust.</li>
+</ul>
+</div>
+</div>
+
+
+
+
+        </div> 
+    </div>
+</div> 
+</div></div>
+</div>        
+  </div><!--/post-content-->
+  
+</div><!--/inner-wrap-->
+
+</article>
+    </div><!--/post-area-->
+        
+                        
+    </div>
+    <!-- content-end -->
+
+     <!-- Get In Touch-Start -->
+     <div class="col-md-12 col-sm-12 col-xs-12 get-in-touch-block newdesign_homegettouch">
+        <div class="container">
+            <div>
+                <div class="col-md-12 col-sm-12 col-xs-12 nopad d-flex">
+                    <div class="col-md-4 col-sm-4 col-xs-12 nopad re-get-bg">
+                        <div>
+                            <div id="block-betahomegetintouchtitle">
+                                <div>
+                                    <div class="col-md-12 col-sm-12 col-xs-12 title-block">
+                                        <h4>Get in Touch</h4>
+                                        <h2>Let us help you<br>transform and grow</h2>
+                                        <div class="hr-devide">
+                                            <hr>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div id="block-betahomesocialmedia">
+                                <div>
+                                    <div class="col-md-12 col-sm-12 col-xs-12 social-links nopad">
+                                        <h4>Follow us on social media</h4>
+                                        <ul class="list-unstyled">
+                                            <li><a href="" target="_blank" rel="nofollow"><img alt="linkedin" class="img-responsive" height="30px" src="/User-five/NGTIQ/icons/linkedin.webp" width="30px"></a>
+                                            </li>
+                                            <li><a href="https://twitter.com/" target="_blank" rel="nofollow"><img alt="twitter" class="img-responsive" height="30px" src="/User-five/NGTIQ/icons/twitter.webp" width="30px"></a></li>
+                                            <li><a href="https://www.facebook.com/" target="_blank" rel="nofollow"><img alt="facebook" class="img-responsive" height="30px" src="/User-five/NGTIQ/icons/facebook.webp" width="30px"></a></li>
+                                            <li><a href="https://www.youtube.com/" target="_blank" rel="nofollow"><img alt="youtube" class="img-responsive" height="30px" src="/User-five/NGTIQ/icons/youtube.webp" width="30px"></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-8 col-sm-8 col-xs-12 get-in-touch-form ">
+                        <div class="col-md-12 col-sm-12 col-xs-12">
+                            <div>
+                                <div id="block-webform"><div id="webform_submission_home_beta_get_in_touch_node_1761_form-ajax">
+                                    <form class="webform-submission-home- form-row" data-drupal-selector="webform-submission-home-beta-get-in-touch-node-1761-form" action="/analytics/analytics-accelerators" method="post" id="webform-submission-home-beta-get-in-touch-node-1761-form" accept-charset="UTF-8">
+                                        <div class="col-md-6 js-form-item form-item js-form-type-textfield form-item-full-name js-form-item-full-name form-no-label">
+                                            <label for="edit-full-name--4" class="visually-hidden js-form-required form-required">Name</label>
+                                            <input class="form-control form-text required" data-drupal-selector="edit-full-name" type="text" id="edit-full-name--4" name="full_name" value="" size="60" maxlength="255" placeholder="Enter Your Name" required="required" aria-required="true">
+                                        </div>
+                                        <div class="col-md-6 js-form-item form-item js-form-type-email form-item-email js-form-item-email form-no-label"><label for="edit-email--4" class="visually-hidden js-form-required form-required">Business Email</label>
+                                            <input class="form-control form-email required" data-drupal-selector="edit-email" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,63}$" type="email" id="edit-email--4" name="email" value="" size="60" maxlength="254" placeholder="Enter Email Address" required="required" aria-required="true">
+                                        </div>
+                                        <div class="col-md-12 js-form-item form-item js-form-type-textfield form-item-company js-form-item-company form-no-label"><label for="edit-company--4" class="visually-hidden js-form-required form-required">Company</label>
+                                            <input class="form-control form-text required" data-drupal-selector="edit-company" type="text" id="edit-company--4" name="company" value="" size="60" maxlength="255" placeholder="Enter Company Name" required="required" aria-required="true">
+                                        </div>
+                                        <div class="col-md-12 js-form-item form-item js-form-type-textarea form-item-comments js-form-item-comments form-no-label"> <label for="edit-comments--3" class="visually-hidden js-form-required form-required">Message for Us</label>
+                                            <div>
+                                                <textarea class="form-control form-textarea required" data-drupal-selector="edit-comments" aria-describedby="edit-comments--3--description" id="edit-comments--3" name="comments" rows="5" cols="60" placeholder="Message for Us" required="required" aria-required="true"></textarea>
+                                            </div>
+                                            <div id="edit-comments--3--description" class="description">
+                                                <p class="requestCont_service">By submitting your information, you agree to our revised &nbsp;<a href="#" target="_blank">Privacy Statement</a>.</p>
+                                            </div>
+                                        </div>
+                                        <input data-drupal-selector="edit-hidden-value" type="hidden" name="hidden_value" value="">
+                                        <input data-drupal-selector="edit-ip" type="hidden" name="ip" value="106.201.45.244">
+                                        <div data-drupal-selector="edit-actions" class="form-actions webform-actions js-form-wrapper form-wrapper" id="edit-actions--7">
+                                            <input class="webform-button--submit btn btn-primary button button--primary js-form-submit form-submit" data-drupal-selector="edit-actions-submit-4" data-disable-refocus="true" type="submit" id="edit-actions-submit--4" name="op" value="Let's Talk" style="background: #f60; border: none;">
+                                        </div>
+                                        <input data-drupal-selector="form-wduy023hdm1ebawf7p-htse-j-qrxb3o-frsugnyi9i" type="hidden" name="form_build_id" value="form-WDuy023hDm1EBAwf7p_Htse-j_Qrxb3o_FrsUGnyI9I"><input data-drupal-selector="edit-webform-submission-home-beta-get-in-touch-node-1761-form" type="hidden" name="form_id" value="webform_submission_home_beta_get_in_touch_node_1761_form">
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <!-- Get In Touch-End -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Start Footer -->
+    <footer class="bg-secondary pt-4">
+        <div class="container">
+            <div class="row py-4">
+
+                <div class="col-lg-3 col-12 align-left">
+                    <a class="navbar-brand" href="index.html">
+                        <i class='bx bx-buildings bx-sm text-light'></i>
+                        <span class="text-light h5">NGTIQ</span> <span class="text-light h5 semi-bold-600"></span>
+                    </a>
+                    <p class="text-light my-lg-4 my-2">
+                        Elictric office, Jaykrishna Bazar Rd, Kolkata, Tarakeswar, West Bengal 712410
+                    </p>
+                    <ul class="list-inline footer-icons light-300">
+                        <li class="list-inline-item m-0">
+                            <a class="text-light" target="_blank" href="http://facebook.com/">
+                                <i class='bx bxl-facebook-square bx-md'></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item m-0">
+                            <a class="text-light" target="_blank" href="https://www.linkedin.com/">
+                                <i class='bx bxl-linkedin-square bx-md'></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item m-0">
+                            <a class="text-light" target="_blank" href="https://www.whatsapp.com/">
+                                <i class='bx bxl-whatsapp-square bx-md'></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item m-0">
+                            <a class="text-light" target="_blank" href="https://www.flickr.com/">
+                                <i class='bx bxl-flickr-square bx-md'></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item m-0">
+                            <a class="text-light" target="_blank" href="https://www.medium.com/">
+                                <i class='bx bxl-medium-square bx-md'></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-4 my-sm-0 mt-4">
+                    <h3 class="h4 pb-lg-3 text-light light-300">Our Company</h2>
+                        <ul class="list-unstyled text-light light-300">
+                            <li class="pb-2">
+                                <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a
+                                    class="text-decoration-none text-light" href="index.html">Home</a>
+                            </li>
+                            <li class="pb-2">
+                                <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a
+                                    class="text-decoration-none text-light py-1" href="about.html">About Us</a>
+                            </li>
+                            <li class="pb-2">
+                                <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a
+                                    class="text-decoration-none text-light py-1" href="work.html">Work</a>
+                            </li>
+                            <li class="pb-2">
+                                <i class='bx-fw bx bxs-chevron-right bx-xs'></i></i><a
+                                    class="text-decoration-none text-light py-1" href="pricing.html">Price</a>
+                            </li>
+                            <li class="pb-2">
+                                <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a
+                                    class="text-decoration-none text-light py-1" href="contact.html">Contact</a>
+                            </li>
+                        </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-4 my-sm-0 mt-4">
+                    <h2 class="h4 pb-lg-3 text-light light-300">Our Works</h2>
+                    <ul class="list-unstyled text-light light-300">
+                        <li class="pb-2">
+                            <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a
+                                class="text-decoration-none text-light py-1" href="#">Branding</a>
+                        </li>
+                        <li class="pb-2">
+                            <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a
+                                class="text-decoration-none text-light py-1" href="#">Business</a>
+                        </li>
+                        <li class="pb-2">
+                            <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a
+                                class="text-decoration-none text-light py-1" href="#">Marketing</a>
+                        </li>
+                        <li class="pb-2">
+                            <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a
+                                class="text-decoration-none text-light py-1" href="#">Social Media</a>
+                        </li>
+                        <li class="pb-2">
+                            <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a
+                                class="text-decoration-none text-light py-1" href="#">Digital Solution</a>
+                        </li>
+                        <li class="pb-2">
+                            <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a
+                                class="text-decoration-none text-light py-1" href="#">Graphic</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-4 my-sm-0 mt-4">
+                    <h2 class="h4 pb-lg-3 text-light light-300">For Client</h2>
+                    <ul class="list-unstyled text-light light-300">
+                        <li class="pb-2">
+                            <i class='bx-fw bx bx-phone bx-xs'></i><a class="text-decoration-none text-light py-1"
+                                href="tel:010-020-0340">+91-8929946339</a>
+                        </li>
+                        <li class="pb-2">
+                            <i class='bx-fw bx bx-mail-send bx-xs'></i><a class="text-decoration-none text-light py-1"
+                                href="mailto:info@ngtiq.com">info@ngtiq.com</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="w-100 bg-primary py-3">
+            <div class="container">
+                <div class="row pt-2">
+                    <div class="col-lg-6 col-sm-12">
+                        <p class="text-lg-start text-center text-light light-300">
+                            © Copyright 2023 NGTIQ Company. All Rights Reserved.
+                        </p>
+                    </div>
+                    <div class="col-lg-6 col-sm-12">
+                        <p class="text-lg-end text-center text-light light-300">
+                            Designed by <a rel="sponsored" class="text-decoration-none text-light"
+                                href="https://ngtiq.com/" target="_blank"><strong>NGTIQ</strong></a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+    <!-- End Footer -->
+
+
+    <!-- Bootstrap -->
+    <!-- <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script> -->
+    <!-- Templatemo -->
+    <!-- <script src="assets/js/templatemo.js"></script> -->
+    <!-- Custom -->
+    <!-- <script src="assets/js/custom.js"></script>
+    <script async custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.1.js"></script> -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+</body>
+
+</html>

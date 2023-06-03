@@ -1,0 +1,129 @@
+* {
+   margin: 0;
+   padding: 0;
+}
+
+.first-header {
+   margin: 0;
+   padding: 0;
+   height: 500px;
+   width: 100%;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+
+.header-design {
+   padding: 3%;
+}
+
+.first-header {
+   margin-top: 10px;
+   margin-bottom: 10px;
+   padding: auto;
+}
+
+.header-design {
+   margin-top: 50px 10px 50px 50px;
+
+   /* text-align: center; */
+   font-size: 20px;
+   padding: 60px 0px 60px 60px;
+
+}
+
+.batten-bc{
+   height: 48px;
+   width: 80px;
+   padding: 5px;
+   margin-left: 100px;
+border: 1px solid rgb(127, 233, 28);
+border-radius:10%;
+   background-color: #e98614;
+   color: #e7ece6;
+   
+}
+.batten-bc:hover{
+   background-color: rgb(97, 180, 228);
+
+}
+.main{
+ 
+}
+h1 {
+   color: rgb(220, 233, 229);
+   font-family: poppins, helvetica, arial, sans-serif;
+
+   word-spacing: 5px;
+   font-weight: 400;
+   font-size: 42px;
+   line-height: 1.2;
+   /* text-align: center; */
+}
+
+p {
+   color: rgb(226, 225, 215);
+   font-family: poppins, helvetica, arial, sans-serif;
+   font-display: swap;
+}
+
+.img {
+   padding: 10%;
+   justify-content: center;
+   display: block;
+}
+
+.pera-graaph{
+   font-size: 16px;
+   font-family: monospace;
+   color: rgb(231, 231, 231);
+}
+.bk{
+   margin-left: 30px;
+
+   color: black;
+  font-family:  poppins,helvetica,arial,sans-serif;
+}
+#bk2{
+   margin-left: 30px;
+   margin-right: 40px;
+   color: black;
+   font-family:  poppins,helvetica,arial,sans-serif;
+}
+#bk1{
+   margin-left: 30px;
+   color: black;
+  font-family:  poppins,helvetica,arial,sans-serif;
+}
+#peragraph-1{
+   margin-top: 20px;
+   margin-left: 30px;
+   margin-right: 40px;
+   color: black;
+   font-family:  poppins,helvetica,arial,sans-serif;
+}
+ul li{
+   color: rgb(0, 0, 0);
+   margin-left: 50px;
+   
+   text-decoration: dotted;
+}
+.list-pera{
+   margin-top: 20px;
+   margin-left: 50px;
+   margin-right: 40px;
+   color: black;
+   font-family:  poppins,helvetica,arial,sans-serif;
+}
+#hd{
+   text-align:center;
+   color: #000;
+   font-size: 20px;
+   font-weight: 3px;
+   white-space:1px;
+
+}
+
+.hosting-card{
+   
+}
+

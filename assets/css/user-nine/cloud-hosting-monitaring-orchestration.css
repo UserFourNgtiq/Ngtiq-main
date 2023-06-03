@@ -1,0 +1,9 @@
+.mpara2:hover{
+    color: aquamarine;
+
+}
+.h-effect:hover{
+    transform: scale(2);
+    
+/*color: rgb(19, 83, 139);*/
+}
